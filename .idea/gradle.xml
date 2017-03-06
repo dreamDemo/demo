@@ -8,14 +8,18 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/demo" />
-            <option value="$PROJECT_DIR$/demo/activityswitchanimation" />
-            <option value="$PROJECT_DIR$/demo/constraint_use_demo" />
-            <option value="$PROJECT_DIR$/demo/imageloader" />
-            <option value="$PROJECT_DIR$/demo/interviewfortest" />
-            <option value="$PROJECT_DIR$/demo/okhttp_use_demo" />
-            <option value="$PROJECT_DIR$/demo/retrofit_use_demo" />
-            <option value="$PROJECT_DIR$/demo/volley_use_demo" />
+            <option value="$PROJECT_DIR$/simple" />
+            <option value="$PROJECT_DIR$/simple/animition" />
+            <option value="$PROJECT_DIR$/simple/animition/activityswitchanimation" />
+            <option value="$PROJECT_DIR$/simple/interview" />
+            <option value="$PROJECT_DIR$/simple/interview/interviewfortest" />
+            <option value="$PROJECT_DIR$/simple/network" />
+            <option value="$PROJECT_DIR$/simple/network/imageloader" />
+            <option value="$PROJECT_DIR$/simple/network/okhttp_use_demo" />
+            <option value="$PROJECT_DIR$/simple/network/retrofit_use_demo" />
+            <option value="$PROJECT_DIR$/simple/network/volley_use_demo" />
+            <option value="$PROJECT_DIR$/simple/view" />
+            <option value="$PROJECT_DIR$/simple/view/constraint_use_demo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
