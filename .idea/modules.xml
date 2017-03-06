@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo/activityswitchanimation/activityswitchanimation.iml" filepath="$PROJECT_DIR$/demo/activityswitchanimation/activityswitchanimation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/constraint_use_demo/constraint_use_demo.iml" filepath="$PROJECT_DIR$/demo/constraint_use_demo/constraint_use_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo-demo.iml" filepath="$PROJECT_DIR$/demo/demo-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/imageloader/imageloader.iml" filepath="$PROJECT_DIR$/demo/imageloader/imageloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/interviewfortest/interviewfortest.iml" filepath="$PROJECT_DIR$/demo/interviewfortest/interviewfortest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/okhttp_use_demo/okhttp_use_demo.iml" filepath="$PROJECT_DIR$/demo/okhttp_use_demo/okhttp_use_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/retrofit_use_demo/retrofit_use_demo.iml" filepath="$PROJECT_DIR$/demo/retrofit_use_demo/retrofit_use_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/volley_use_demo/volley_use_demo.iml" filepath="$PROJECT_DIR$/demo/volley_use_demo/volley_use_demo.iml" />
+    </modules>
+  </component>
+</project>
