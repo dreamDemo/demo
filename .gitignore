@@ -1,0 +1,15 @@
+.DS_Store
+.idea/
+.gradle/
+bin/
+gen/
+build/
+captures/
+*.iml
+local.properties
+app/gradle.properties
+app/version.properties
+.classpath
+.project
+*.log
+*.temp

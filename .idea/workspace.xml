@@ -10,183 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="661e85fe-5107-4f29-9872-77a65f7ccd2b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_simple_network_volley_use_demo_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_simple_network_volley_use_demo_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_simple_network_volley_use_demo_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_simple_network_volley_use_demo_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-03-06-16-46-57-775.rawproto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-03-06-16-49-21-642.rawproto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simple/animition/animition.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simple/interview/interview.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simple/simple.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-06-15-10-46-609.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-06-15-28-36-219.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-06-16-10-04-793.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-06-16-10-23-100.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-06-16-22-41-726.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-06-16-26-34-321.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-06-16-27-37-079.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-06-16-27-40-739.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-03-06-16-28-59-974.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/.gitignore" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/activityswitchanimation.iml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/activityswitchanimation.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/build.gradle" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/build.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/proguard-rules.pro" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/proguard-rules.pro" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/androidTest/java/com/meitu/netlib/activityswitchanimation/ApplicationTest.java" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/androidTest/java/com/meitu/netlib/activityswitchanimation/ApplicationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/java/com/meitu/netlib/activityswitchanimation/MTApplication.java" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/java/com/meitu/netlib/activityswitchanimation/MTApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/java/com/meitu/netlib/activityswitchanimation/Main2Activity.java" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/java/com/meitu/netlib/activityswitchanimation/Main2Activity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/java/com/meitu/netlib/activityswitchanimation/MainActivity.java" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/java/com/meitu/netlib/activityswitchanimation/MainActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/anim/enteralpha.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/anim/enteralpha.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/anim/exitalpha.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/anim/exitalpha.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/anim/exitalpha1.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/anim/exitalpha1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/layout/activity_main.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/layout/activity_main2.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/layout/activity_main2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/layout/content_main2.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/layout/content_main2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/values-v21/styles.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/values-v21/styles.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/values/colors.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/values/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/values/styles.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/activityswitchanimation/src/test/java/com/meitu/netlib/activityswitchanimation/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/test/java/com/meitu/netlib/activityswitchanimation/ExampleUnitTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/.gitignore" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/build.gradle" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/build.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/constraint_use_demo.iml" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/constraint_use_demo.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/proguard-rules.pro" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/proguard-rules.pro" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/androidTest/java/com/meitu/netlib/constraintdemo/ExampleInstrumentedTest.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/androidTest/java/com/meitu/netlib/constraintdemo/ExampleInstrumentedTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/layout/activity_main.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/values/colors.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/values/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/values/styles.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/constraint_use_demo/src/test/java/com/meitu/netlib/constraintdemo/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/test/java/com/meitu/netlib/constraintdemo/ExampleUnitTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/demo-demo.iml" afterPath="$PROJECT_DIR$/simple/view/view.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/demo.iml" afterPath="$PROJECT_DIR$/simple/network/network.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/.gitignore" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/build.gradle" afterPath="$PROJECT_DIR$/simple/network/imageloader/build.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/imageloader.iml" afterPath="$PROJECT_DIR$/simple/network/imageloader/imageloader.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/proguard-rules.pro" afterPath="$PROJECT_DIR$/simple/network/imageloader/proguard-rules.pro" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/androidTest/java/com/example/imageloader/ExampleInstrumentedTest.java" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/androidTest/java/com/example/imageloader/ExampleInstrumentedTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/main/java/com/example/imageloader/MainActivity.java" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/main/java/com/example/imageloader/MainActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/main/res/layout/activity_main.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/res/values/colors.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/values/styles.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/imageloader/src/test/java/com/example/imageloader/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/test/java/com/example/imageloader/ExampleUnitTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/.gitignore" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/build.gradle" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/build.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/interviewfortest.iml" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/interviewfortest.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/proguard-rules.pro" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/proguard-rules.pro" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/androidTest/java/com/example/interviewfortest/ExampleInstrumentedTest.java" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/androidTest/java/com/example/interviewfortest/ExampleInstrumentedTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/java/com/example/interviewfortest/MainActivity.java" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/java/com/example/interviewfortest/MainActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/java/com/example/interviewfortest/Test1Activity.java" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/java/com/example/interviewfortest/Test1Activity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/java/com/example/interviewfortest/Test2Activity.java" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/java/com/example/interviewfortest/Test2Activity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/anim/mtb_fade_out.xml" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/anim/mtb_fade_out.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/layout/activity_main.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/layout/activity_test1.xml" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/layout/activity_test1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/layout/activity_test2.xml" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/layout/activity_test2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/res/values/colors.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/res/values/styles.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/interviewfortest/src/test/java/com/example/interviewfortest/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/test/java/com/example/interviewfortest/ExampleUnitTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/.gitignore" afterPath="$PROJECT_DIR$/simple/network/imageloader/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/build.gradle" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/build.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/okhttp_use_demo.iml" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/okhttp_use_demo.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/proguard-rules.pro" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/proguard-rules.pro" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/androidTest/java/com/meitu/netlib/okhttpusedemo/ApplicationTest.java" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/androidTest/java/com/meitu/netlib/okhttpusedemo/ApplicationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/java/com/meitu/netlib/okhttpusedemo/MainActivity.java" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/java/com/meitu/netlib/okhttpusedemo/MainActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/res/layout/activity_main.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/main/res/values/colors.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/values/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/res/values/styles.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/okhttp_use_demo/src/test/java/com/meitu/netlib/okhttpusedemo/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/test/java/com/meitu/netlib/okhttpusedemo/ExampleUnitTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/.gitignore" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/build.gradle" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/build.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/proguard-rules.pro" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/proguard-rules.pro" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/retrofit_use_demo.iml" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/retrofit_use_demo.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/androidTest/java/com/meitu/netlib/retrofitusendemo/ApplicationTest.java" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/androidTest/java/com/meitu/netlib/retrofitusendemo/ApplicationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/java/com/meitu/netlib/retrofitusendemo/MainActivity.java" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/java/com/meitu/netlib/retrofitusendemo/MainActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/res/layout/activity_main.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/values/colors.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/res/values/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/simple/network/imageloader/src/main/res/values/styles.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/retrofit_use_demo/src/test/java/com/meitu/netlib/retrofitusendemo/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/simple/network/retrofit_use_demo/src/test/java/com/meitu/netlib/retrofitusendemo/ExampleUnitTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/.gitignore" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/build.gradle" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/build.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/proguard-rules.pro" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/proguard-rules.pro" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/androidTest/java/com/meitu/netlib/volleydemo/ApplicationTest.java" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/androidTest/java/com/meitu/netlib/volleydemo/ApplicationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/java/com/meitu/netlib/volleydemo/MainActivity.java" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/java/com/meitu/netlib/volleydemo/MainActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/layout/activity_main.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/simple/animition/activityswitchanimation/src/main/res/values/colors.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/simple/network/okhttp_use_demo/src/main/res/values/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/simple/interview/interviewfortest/src/main/res/values/styles.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/src/test/java/com/meitu/netlib/volleydemo/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/src/test/java/com/meitu/netlib/volleydemo/ExampleUnitTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/volley_use_demo.iml" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/volley_use_demo.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo/volley_use_demo/volleyusedemo.iml" afterPath="$PROJECT_DIR$/simple/network/volley_use_demo/volleyusedemo.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_demo_volley_use_demo_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_demo_volley_use_demo_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_demo_volley_use_demo_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_demo_volley_use_demo_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_demo_volley_use_demo_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_demo_volley_use_demo_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-25.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-25.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo.iml" afterPath="$PROJECT_DIR$/demo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/network/imageloader/imageloader.iml" afterPath="$PROJECT_DIR$/simple/network/imageloader/imageloader.iml" />
     </list>
     <ignored path="demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -218,96 +47,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/network/retrofit_use_demo/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/network/volley_use_demo/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/network/volley_use_demo/src/main/java/com/meitu/netlib/volleydemo/MainActivity.java">
+        <entry file="file://$PROJECT_DIR$/simple/network/imageloader/src/main/java/com/example/imageloader/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/network/volley_use_demo/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/animition/activityswitchanimation/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="240">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/build.gradle">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/network/imageloader/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/interview/interviewfortest/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -15555,8 +15309,12 @@
     <property name="android.project.structure.last.selected" value="upload_demo" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="device.picker.selection" value="98fd8e1" />
+    <property name="SearchEverywhereHistoryKey" value="Main&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/demo/simple/network/imageloader/src/main/java/com/example/imageloader/MainActivity.java" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/simple/interview" />
       <recent name="$PROJECT_DIR$/simple/network" />
@@ -15564,7 +15322,7 @@
       <recent name="$PROJECT_DIR$/simple/animition" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.volley_use_demo">
+  <component name="RunManager" selected="Android App.imageloader">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -15900,7 +15658,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
-    <configuration default="false" name="imageloader" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration default="false" name="imageloader" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="imageloader" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -16176,6 +15934,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="661e85fe-5107-4f29-9872-77a65f7ccd2b" name="Default" comment="" />
@@ -16209,11 +15970,11 @@
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23263328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23263328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -16419,17 +16180,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/network/imageloader/src/main/java/com/example/imageloader/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.3/3af7bbe53f48e328c99582dd15d6e5e7dbe1c27a/universal-image-loader-1.9.3-sources.jar!/com/nostra13/universalimageloader/core/ImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -16437,6 +16192,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -16561,8 +16317,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="16">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/network/imageloader/src/main/java/com/example/imageloader/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
