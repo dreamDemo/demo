@@ -1,18 +1,83 @@
 package com.meitu.netlib.constraintdemo;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.webkit.WebView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    RecyclerView recyclerView;
+    public List<String> mList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String data = "<div class=\"vH0\"><h1 class=\"uV0 qH0\" id=\"h1Logo\">   <a href=\"javascript:;\" class=\"tt0\"><img src=\"http://mail.qiye.163.com/qiyeimage/logo/meitu_com/1461740234413.png\" alt=\"\" id=\"imgLogo\">   </a></h1><ul class=\"vz0\" role=\"navigation\"></ul></div>";
-        WebView webView = (WebView) findViewById(R.id.web_main);
-        webView.loadDataWithBaseURL("", data, "text/html", "utf-8", null);
 
+        initData();
+
+        recyclerView = (RecyclerView) findViewById(R.id.rv_main_test);
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        recyclerView.setAdapter(new MainAdapter(this, mList));
+    }
+
+    private void initData() {
+        mList.add("点击展开RecyclerView");
+    }
+
+    public class MainAdapter extends RecyclerView.Adapter<MainAdapter.TextHolder> {
+
+        LayoutInflater mLayoutInflater;
+        List<String> mList;
+
+        public MainAdapter(Context context, List<String> list) {
+            this.mList = list;
+            mLayoutInflater = LayoutInflater.from(context);
+        }
+
+
+        @Override
+        public TextHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            return new TextHolder(mLayoutInflater.inflate(R.layout.item_test, null));
+        }
+
+        @Override
+        public void onBindViewHolder(TextHolder holder, int position) {
+            holder.textView.setText(mList.get(position));
+        }
+
+        @Override
+        public int getItemCount() {
+            return mList.size();
+        }
+
+        class TextHolder extends RecyclerView.ViewHolder {
+            public TextView textView;
+
+            public TextHolder(View view) {
+                super(view);
+                textView = (TextView) view.findViewById(R.id.tv_test);
+                view.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (getLayoutPosition() == 0) {
+                            Toast.makeText(MainActivity.this, "  ==========", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+            }
+        }
     }
 }
