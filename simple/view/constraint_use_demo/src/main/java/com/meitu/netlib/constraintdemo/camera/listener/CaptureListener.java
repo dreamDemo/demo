@@ -1,8 +1,7 @@
 package com.meitu.netlib.constraintdemo.camera.listener;
 
 /**
- * create by CJT2325
- * 445263848@qq.com.
+ * create by sunyuxin
  */
 
 public interface CaptureListener {

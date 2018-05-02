@@ -21,12 +21,7 @@ import static com.meitu.netlib.constraintdemo.camera.view.JCameraView.BUTTON_STA
 
 
 /**
- * =====================================
- * 作    者: 陈嘉桐 445263848@qq.com
- * 版    本：1.1.4
- * 创建日期：2017/4/25
- * 描    述：拍照按钮
- * =====================================
+ * create by sunyuxin
  */
 public class CaptureButton extends View {
 

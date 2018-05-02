@@ -4,12 +4,7 @@ import android.content.Context;
 import android.media.AudioManager;
 
 /**
- * =====================================
- * 作    者: 陈嘉桐
- * 版    本：1.1.4
- * 创建日期：2017/4/26
- * 描    述：
- * =====================================
+ * create by sunyuxin
  */
 public class AudioUtil {
     public static void setAudioManage(Context context) {

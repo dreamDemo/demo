@@ -1,19 +1,14 @@
-package com.meitu.netlib.constraintdemo.state;
+package com.meitu.netlib.constraintdemo.camera.state;
 
 import android.graphics.Bitmap;
 import android.view.SurfaceHolder;
 
 import com.meitu.netlib.constraintdemo.camera.util.LogUtil;
-import com.meitu.netlib.constraintdemo.camera.view.CameraInterface;
+import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
 
 
 /**
- * =====================================
- * 作    者: 陈嘉桐
- * 版    本：1.1.4
- * 创建日期：2017/9/8
- * 描    述：空闲状态
- * =====================================
+ * Created by sunyuxin on 2018/5/2.
  */
 class PreviewState implements State {
     public static final String TAG = "PreviewState";

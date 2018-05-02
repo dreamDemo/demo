@@ -1,4 +1,4 @@
-package com.meitu.netlib.constraintdemo.camera.view;
+package com.meitu.netlib.constraintdemo.camera.callback;
 
 import android.graphics.Bitmap;
 

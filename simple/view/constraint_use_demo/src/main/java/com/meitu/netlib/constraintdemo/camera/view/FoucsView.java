@@ -11,12 +11,7 @@ import com.meitu.netlib.constraintdemo.camera.util.ScreenUtils;
 
 
 /**
- * =====================================
- * 作    者: 陈嘉桐
- * 版    本：1.1.4
- * 创建日期：2017/4/26
- * 描    述：对焦框
- * =====================================
+ * create by sunyuxin
  */
 public class FoucsView extends View {
     private int size;

@@ -1,4 +1,4 @@
-package com.meitu.netlib.constraintdemo.camera.view;
+package com.meitu.netlib.constraintdemo.camera.callback;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -31,6 +31,7 @@ import com.meitu.netlib.constraintdemo.camera.util.DeviceUtil;
 import com.meitu.netlib.constraintdemo.camera.util.FileUtil;
 import com.meitu.netlib.constraintdemo.camera.util.LogUtil;
 import com.meitu.netlib.constraintdemo.camera.util.ScreenUtils;
+import com.meitu.netlib.constraintdemo.camera.view.JCameraView;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -199,7 +200,7 @@ public class CameraInterface implements Camera.PreviewCallback {
     }
 
     @SuppressWarnings("ResultOfMethodCallIgnored")
-    void setSaveVideoPath(String saveVideoPath) {
+    public void setSaveVideoPath(String saveVideoPath) {
         this.saveVideoPath = saveVideoPath;
         File file = new File(saveVideoPath);
         if (!file.exists()) {
@@ -256,7 +257,7 @@ public class CameraInterface implements Camera.PreviewCallback {
 
     }
 
-    void setMediaQuality(int quality) {
+    public void setMediaQuality(int quality) {
         this.mediaQuality = quality;
     }
 
@@ -289,7 +290,7 @@ public class CameraInterface implements Camera.PreviewCallback {
     /**
      * open Camera
      */
-    void doOpenCamera(CameraOpenOverCallback callback) {
+    public void doOpenCamera(CameraOpenOverCallback callback) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
             if (!CheckPermission.isCameraUseable(SELECTED_CAMERA) && this.errorLisenter != null) {
                 this.errorLisenter.onError();
@@ -423,7 +424,7 @@ public class CameraInterface implements Camera.PreviewCallback {
     /**
      * 销毁Camera
      */
-    void doDestroyCamera() {
+    public void doDestroyCamera() {
         errorLisenter = null;
         if (null != mCamera) {
             try {
@@ -736,7 +737,7 @@ public class CameraInterface implements Camera.PreviewCallback {
         return x;
     }
 
-    void setErrorLinsenter(ErrorListener errorLisenter) {
+    public void setErrorLinsenter(ErrorListener errorLisenter) {
         this.errorLisenter = errorLisenter;
     }
 
@@ -759,7 +760,7 @@ public class CameraInterface implements Camera.PreviewCallback {
     }
 
 
-    void registerSensorManager(Context context) {
+    public void registerSensorManager(Context context) {
         if (sm == null) {
             sm = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
         }
@@ -767,14 +768,14 @@ public class CameraInterface implements Camera.PreviewCallback {
                 .SENSOR_DELAY_NORMAL);
     }
 
-    void unregisterSensorManager(Context context) {
+    public void unregisterSensorManager(Context context) {
         if (sm == null) {
             sm = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
         }
         sm.unregisterListener(sensorEventListener);
     }
 
-    void isPreview(boolean res) {
+    public void isPreview(boolean res) {
         this.isPreviewing = res;
     }
 }

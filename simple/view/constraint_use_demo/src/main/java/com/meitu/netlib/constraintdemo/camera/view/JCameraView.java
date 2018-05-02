@@ -24,6 +24,8 @@ import android.widget.ImageView;
 import android.widget.VideoView;
 
 import com.meitu.netlib.constraintdemo.R;
+import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
+import com.meitu.netlib.constraintdemo.camera.callback.CameraView;
 import com.meitu.netlib.constraintdemo.camera.listener.CaptureListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ClickListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ErrorListener;
@@ -32,18 +34,13 @@ import com.meitu.netlib.constraintdemo.camera.listener.TypeListener;
 import com.meitu.netlib.constraintdemo.camera.util.FileUtil;
 import com.meitu.netlib.constraintdemo.camera.util.LogUtil;
 import com.meitu.netlib.constraintdemo.camera.util.ScreenUtils;
-import com.meitu.netlib.constraintdemo.state.CameraMachine;
+import com.meitu.netlib.constraintdemo.camera.state.CameraMachine;
 
 import java.io.IOException;
 
 
 /**
- * =====================================
- * 作    者: 陈嘉桐
- * 版    本：1.0.4
- * 创建日期：2017/4/25
- * 描    述：
- * =====================================
+ * create by sunyuxin
  */
 public class JCameraView extends FrameLayout implements CameraInterface.CameraOpenOverCallback, SurfaceHolder
         .Callback, CameraView {
@@ -442,7 +439,7 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
         captureBitmap = bitmap;
         mPhoto.setImageBitmap(bitmap);
         mPhoto.setVisibility(VISIBLE);
-        mCaptureLayout.startTypeBtnAnimator();
+//        mCaptureLayout.startTypeBtnAnimator();
     }
 
     @Override

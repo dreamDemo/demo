@@ -13,10 +13,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-import com.meitu.netlib.constraintdemo.camera.ReturnButton;
-import com.meitu.netlib.constraintdemo.camera.TypeButton;
 import com.meitu.netlib.constraintdemo.camera.listener.CaptureListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ClickListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ReturnListener;
@@ -24,12 +21,7 @@ import com.meitu.netlib.constraintdemo.camera.listener.TypeListener;
 
 
 /**
- * =====================================
- * 作    者: 陈嘉桐 445263848@qq.com
- * 版    本：1.0.4
- * 创建日期：2017/4/26
- * 描    述：集成各个控件的布局
- * =====================================
+ * create by sunyuxin
  */
 
 public class CaptureLayout extends FrameLayout {
