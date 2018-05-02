@@ -2,6 +2,7 @@ package com.meitu.netlib.constraintdemo.camera.view;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -87,6 +88,7 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
     private VideoView mVideoView;
     private ImageView mPhoto;
     private ImageView mSwitchCamera;
+    private ImageView mClose;
     private ImageView mFlashLamp;
     private CaptureLayout mCaptureLayout;
     private FoucsView mFoucsView;
@@ -154,6 +156,7 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
         mVideoView = (VideoView) view.findViewById(R.id.video_preview);
         mPhoto = (ImageView) view.findViewById(R.id.image_photo);
         mSwitchCamera = (ImageView) view.findViewById(R.id.image_switch);
+        mClose = (ImageView) view.findViewById(R.id.image_close);
         mSwitchCamera.setImageResource(iconSrc);
         mFlashLamp = (ImageView) view.findViewById(R.id.image_flash);
         setFlashRes();
@@ -182,7 +185,7 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
         mCaptureLayout.setCaptureLisenter(new CaptureListener() {
             @Override
             public void takePictures() {
-                mSwitchCamera.setVisibility(INVISIBLE);
+                mSwitchCamera.setVisibility(GONE);
                 mFlashLamp.setVisibility(INVISIBLE);
                 machine.capture();
             }
@@ -199,15 +202,16 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
                 machine.confirm();
             }
         });
-        //退出
-//        mCaptureLayout.setReturnLisenter(new ReturnListener() {
-//            @Override
-//            public void onReturn() {
-//                if (jCameraLisenter != null) {
-//                    jCameraLisenter.quit();
-//                }
-//            }
-//        });
+        mClose.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (v.getContext() instanceof Activity) {
+                    if (!((Activity) v.getContext()).isFinishing()) {
+                        ((Activity) v.getContext()).finish();
+                    }
+                }
+             }
+        });
         mCaptureLayout.setLeftClickListener(new ClickListener() {
             @Override
             public void onClick() {
@@ -398,7 +402,7 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
                 mVideoView.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
                 break;
         }
-        mSwitchCamera.setVisibility(VISIBLE);
+        mSwitchCamera.setVisibility(GONE);
         mFlashLamp.setVisibility(VISIBLE);
         mCaptureLayout.resetCaptureLayout();
     }
