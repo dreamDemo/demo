@@ -1,6 +1,5 @@
 package com.meitu.netlib.constraintdemo.state;
 
-import android.view.Surface;
 import android.view.SurfaceHolder;
 
 import com.meitu.netlib.constraintdemo.camera.util.LogUtil;
@@ -53,15 +52,6 @@ public class BorrowPictureState implements State {
     @Override
     public void capture() {
 
-    }
-
-    @Override
-    public void record(Surface surface,float screenProp) {
-
-    }
-
-    @Override
-    public void stopRecord(boolean isShort, long time) {
     }
 
     @Override

@@ -57,16 +57,6 @@ public class BorrowVideoState implements State {
     }
 
     @Override
-    public void record(Surface surface, float screenProp) {
-
-    }
-
-    @Override
-    public void stopRecord(boolean isShort, long time) {
-
-    }
-
-    @Override
     public void cancle(SurfaceHolder holder, float screenProp) {
         machine.getView().resetState(JCameraView.TYPE_VIDEO);
         machine.setState(machine.getPreviewState());

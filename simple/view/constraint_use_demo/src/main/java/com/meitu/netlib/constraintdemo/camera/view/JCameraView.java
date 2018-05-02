@@ -186,44 +186,6 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
                 mFlashLamp.setVisibility(INVISIBLE);
                 machine.capture();
             }
-
-            @Override
-            public void recordStart() {
-                mSwitchCamera.setVisibility(INVISIBLE);
-                mFlashLamp.setVisibility(INVISIBLE);
-                machine.record(mVideoView.getHolder().getSurface(), screenProp);
-            }
-
-            @Override
-            public void recordShort(final long time) {
-                mCaptureLayout.setTextWithAnimation("录制时间过短");
-                mSwitchCamera.setVisibility(VISIBLE);
-                mFlashLamp.setVisibility(VISIBLE);
-                postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        machine.stopRecord(true, time);
-                    }
-                }, 1500 - time);
-            }
-
-            @Override
-            public void recordEnd(long time) {
-                machine.stopRecord(false, time);
-            }
-
-            @Override
-            public void recordZoom(float zoom) {
-                LogUtil.i("recordZoom");
-                machine.zoom(zoom, CameraInterface.TYPE_RECORDER);
-            }
-
-            @Override
-            public void recordError() {
-                if (errorLisenter != null) {
-                    errorLisenter.AudioPermissionError();
-                }
-            }
         });
         //确认 取消
         mCaptureLayout.setTypeLisenter(new TypeListener() {
@@ -476,7 +438,6 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
         captureBitmap = bitmap;
         mPhoto.setImageBitmap(bitmap);
         mPhoto.setVisibility(VISIBLE);
-        mCaptureLayout.startAlphaAnimation();
         mCaptureLayout.startTypeBtnAnimator();
     }
 
@@ -529,11 +490,6 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
             mMediaPlayer.release();
             mMediaPlayer = null;
         }
-    }
-
-    @Override
-    public void setTip(String tip) {
-        mCaptureLayout.setTip(tip);
     }
 
     @Override

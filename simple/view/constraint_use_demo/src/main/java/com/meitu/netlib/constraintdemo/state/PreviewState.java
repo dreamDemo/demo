@@ -1,12 +1,10 @@
 package com.meitu.netlib.constraintdemo.state;
 
 import android.graphics.Bitmap;
-import android.view.Surface;
 import android.view.SurfaceHolder;
 
 import com.meitu.netlib.constraintdemo.camera.util.LogUtil;
 import com.meitu.netlib.constraintdemo.camera.view.CameraInterface;
-import com.meitu.netlib.constraintdemo.camera.view.JCameraView;
 
 
 /**
@@ -63,26 +61,6 @@ class PreviewState implements State {
                 machine.getView().showPicture(bitmap, isVertical);
                 machine.setState(machine.getBorrowPictureState());
                 LogUtil.i("capture");
-            }
-        });
-    }
-
-    @Override
-    public void record(Surface surface, float screenProp) {
-        CameraInterface.getInstance().startRecord(surface, screenProp, null);
-    }
-
-    @Override
-    public void stopRecord(final boolean isShort, long time) {
-        CameraInterface.getInstance().stopRecord(isShort, new CameraInterface.StopRecordCallback() {
-            @Override
-            public void recordResult(String url, Bitmap firstFrame) {
-                if (isShort) {
-                    machine.getView().resetState(JCameraView.TYPE_SHORT);
-                } else {
-                    machine.getView().playVideo(firstFrame, url);
-                    machine.setState(machine.getBorrowVideoState());
-                }
             }
         });
     }

@@ -28,10 +28,6 @@ public interface State {
 
     void capture();
 
-    void record(Surface surface, float screenProp);
-
-    void stopRecord(boolean isShort, long time);
-
     void cancle(SurfaceHolder holder, float screenProp);
 
     void confirm();

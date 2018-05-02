@@ -149,14 +149,6 @@ public class CaptureButton extends View {
                 event_Y = event.getY();     //记录Y值
                 state = STATE_PRESS;        //修改当前状态为点击按下
                 break;
-            case MotionEvent.ACTION_MOVE:
-                if (captureLisenter != null
-                        && state == STATE_RECORDERING
-                        && (button_state == BUTTON_STATE_ONLY_RECORDER || button_state == BUTTON_STATE_BOTH)) {
-                    //记录当前Y值与按下时候Y值的差值，调用缩放回调接口
-                    captureLisenter.recordZoom(event_Y - event.getY());
-                }
-                break;
             case MotionEvent.ACTION_UP:
                 //根据当前按钮的状态进行相应的处理
                 handlerUnpressByState();
@@ -188,12 +180,6 @@ public class CaptureButton extends View {
 
     //录制结束
     private void recordEnd() {
-        if (captureLisenter != null) {
-            if (recorded_time < min_duration)
-                captureLisenter.recordShort(recorded_time);//回调录制时间过短
-            else
-                captureLisenter.recordEnd(recorded_time);  //回调录制结束
-        }
         resetRecordAnim();  //重制按钮状态
     }
 
@@ -262,8 +248,6 @@ public class CaptureButton extends View {
                 super.onAnimationEnd(animation);
                 //设置为录制状态
                 if (state == STATE_LONG_PRESS) {
-                    if (captureLisenter != null)
-                        captureLisenter.recordStart();
                     state = STATE_RECORDERING;
                     timer.start();
                 }

@@ -58,7 +58,6 @@ public class CaptureLayout extends FrameLayout {
     private ReturnButton btn_return;        //返回按钮
     private ImageView iv_custom_left;            //左边自定义按钮
     private ImageView iv_custom_right;            //右边自定义按钮
-    private TextView txt_tip;               //提示文本
 
     private int layout_width;
     private int layout_height;
@@ -153,45 +152,6 @@ public class CaptureLayout extends FrameLayout {
                     captureLisenter.takePictures();
                 }
             }
-
-            @Override
-            public void recordShort(long time) {
-                if (captureLisenter != null) {
-                    captureLisenter.recordShort(time);
-                }
-                startAlphaAnimation();
-            }
-
-            @Override
-            public void recordStart() {
-                if (captureLisenter != null) {
-                    captureLisenter.recordStart();
-                }
-                startAlphaAnimation();
-            }
-
-            @Override
-            public void recordEnd(long time) {
-                if (captureLisenter != null) {
-                    captureLisenter.recordEnd(time);
-                }
-                startAlphaAnimation();
-                startTypeBtnAnimator();
-            }
-
-            @Override
-            public void recordZoom(float zoom) {
-                if (captureLisenter != null) {
-                    captureLisenter.recordZoom(zoom);
-                }
-            }
-
-            @Override
-            public void recordError() {
-                if (captureLisenter != null) {
-                    captureLisenter.recordError();
-                }
-            }
         });
 
         //取消按钮
@@ -206,7 +166,6 @@ public class CaptureLayout extends FrameLayout {
                 if (typeLisenter != null) {
                     typeLisenter.cancel();
                 }
-                startAlphaAnimation();
 //                resetCaptureLayout();
             }
         });
@@ -223,7 +182,6 @@ public class CaptureLayout extends FrameLayout {
                 if (typeLisenter != null) {
                     typeLisenter.confirm();
                 }
-                startAlphaAnimation();
 //                resetCaptureLayout();
             }
         });
@@ -272,22 +230,12 @@ public class CaptureLayout extends FrameLayout {
             }
         });
 
-        txt_tip = new TextView(getContext());
-        LayoutParams txt_param = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-        txt_param.gravity = Gravity.CENTER_HORIZONTAL;
-        txt_param.setMargins(0, 0, 0, 0);
-        txt_tip.setText("轻触拍照，长按摄像");
-        txt_tip.setTextColor(0xFFFFFFFF);
-        txt_tip.setGravity(Gravity.CENTER);
-        txt_tip.setLayoutParams(txt_param);
-
         this.addView(btn_capture);
         this.addView(btn_cancel);
         this.addView(btn_confirm);
         this.addView(btn_return);
         this.addView(iv_custom_left);
         this.addView(iv_custom_right);
-        this.addView(txt_tip);
 
     }
 
@@ -308,36 +256,12 @@ public class CaptureLayout extends FrameLayout {
     }
 
 
-    public void startAlphaAnimation() {
-        if (isFirst) {
-            ObjectAnimator animator_txt_tip = ObjectAnimator.ofFloat(txt_tip, "alpha", 1f, 0f);
-            animator_txt_tip.setDuration(500);
-            animator_txt_tip.start();
-            isFirst = false;
-        }
-    }
-
-    public void setTextWithAnimation(String tip) {
-        txt_tip.setText(tip);
-        ObjectAnimator animator_txt_tip = ObjectAnimator.ofFloat(txt_tip, "alpha", 0f, 1f, 1f, 0f);
-        animator_txt_tip.setDuration(2500);
-        animator_txt_tip.start();
-    }
-
     public void setDuration(int duration) {
         btn_capture.setDuration(duration);
     }
 
     public void setButtonFeatures(int state) {
         btn_capture.setButtonFeatures(state);
-    }
-
-    public void setTip(String tip) {
-        txt_tip.setText(tip);
-    }
-
-    public void showTip() {
-        txt_tip.setVisibility(VISIBLE);
     }
 
     public void setIconSrc(int iconLeft, int iconRight) {
