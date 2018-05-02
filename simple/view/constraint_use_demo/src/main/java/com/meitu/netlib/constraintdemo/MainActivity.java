@@ -11,6 +11,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.meitu.netlib.constraintdemo.camera.Camera1Activity;
+import com.meitu.netlib.constraintdemo.expand.ExpandRecyclerActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         mList.add("点击展开RecyclerView");
+        mList.add("照相机");
     }
 
     public class MainAdapter extends RecyclerView.Adapter<MainAdapter.TextHolder> {
@@ -72,8 +76,13 @@ public class MainActivity extends AppCompatActivity {
                 view.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if (getLayoutPosition() == 0) {
-                            Toast.makeText(MainActivity.this, "  ==========", Toast.LENGTH_SHORT).show();
+                        switch (getLayoutPosition()) {
+                            case 0 :
+                                ExpandRecyclerActivity.launchActivity(v.getContext());
+                                break;
+                            case 1 :
+                                Camera1Activity.launch(v.getContext());
+                                break;
                         }
                     }
                 });
