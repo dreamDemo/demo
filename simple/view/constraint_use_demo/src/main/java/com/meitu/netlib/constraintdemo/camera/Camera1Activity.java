@@ -9,7 +9,6 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -20,8 +19,6 @@ import android.widget.Toast;
 import com.meitu.netlib.constraintdemo.R;
 import com.meitu.netlib.constraintdemo.camera.listener.JCameraListener;
 import com.meitu.netlib.constraintdemo.camera.view.Camera1View;
-
-import java.io.File;
 
 /**
  * Created by sunyuxin on 2018/5/2.
@@ -50,18 +47,6 @@ public class Camera1Activity extends Activity {
                 //获取图片bitmap
                 Log.i("JCameraView", "bitmap = " + bitmap.getWidth());
             }
-
-            @Override
-            public void recordSuccess(String url, Bitmap firstFrame) {
-
-            }
-
-
-//            @Override
-//            public void quit() {
-//                //退出按钮
-//                MainActivity.this.finish();
-//            }
         });
         //6.0动态权限获取
         getPermissions();

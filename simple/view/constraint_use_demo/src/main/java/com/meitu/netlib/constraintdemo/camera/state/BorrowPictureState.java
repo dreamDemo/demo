@@ -1,8 +1,8 @@
 package com.meitu.netlib.constraintdemo.camera.state;
 
+import android.util.Log;
 import android.view.SurfaceHolder;
 
-import com.meitu.netlib.constraintdemo.camera.util.LogUtil;
 import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
 import com.meitu.netlib.constraintdemo.camera.view.Camera1View;
 
@@ -64,7 +64,7 @@ public class BorrowPictureState implements State {
 
     @Override
     public void zoom(float zoom, int type) {
-        LogUtil.i(TAG, "zoom");
+        Log.i(TAG, "zoom");
     }
 
     @Override

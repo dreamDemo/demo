@@ -23,9 +23,7 @@ import com.meitu.netlib.constraintdemo.camera.listener.ErrorListener;
 import com.meitu.netlib.constraintdemo.camera.util.AngleUtil;
 import com.meitu.netlib.constraintdemo.camera.util.CameraParamUtil;
 import com.meitu.netlib.constraintdemo.camera.util.CheckPermission;
-import com.meitu.netlib.constraintdemo.camera.util.LogUtil;
 import com.meitu.netlib.constraintdemo.camera.util.ScreenUtils;
-import com.meitu.netlib.constraintdemo.camera.view.Camera1View;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -34,14 +32,8 @@ import java.util.List;
 import static android.graphics.Bitmap.createBitmap;
 
 /**
- * =====================================
- * 作    者: 陈嘉桐
- * 版    本：1.1.4
- * 创建日期：2017/4/25
- * 描    述：camera操作单例
- * =====================================
+ * create by sunyuxin
  */
-@SuppressWarnings("deprecation")
 public class CameraInterface implements Camera.PreviewCallback {
 
     private static final String TAG = "CJT";
@@ -85,7 +77,6 @@ public class CameraInterface implements Camera.PreviewCallback {
     private int recordScleRate = 0;
 
     //视频质量
-    private int mediaQuality = Camera1View.MEDIA_QUALITY_MIDDLE;
     private SensorManager sm = null;
 
     //获取CameraInterface单例
@@ -227,16 +218,10 @@ public class CameraInterface implements Camera.PreviewCallback {
                     mParams.setZoom(nowScaleRate);
                     mCamera.setParameters(mParams);
                 }
-                LogUtil.i("setZoom = " + nowScaleRate);
                 break;
         }
 
     }
-
-    public void setMediaQuality(int quality) {
-        this.mediaQuality = quality;
-    }
-
 
     @Override
     public void onPreviewFrame(byte[] data, Camera camera) {
@@ -278,12 +263,6 @@ public class CameraInterface implements Camera.PreviewCallback {
         callback.cameraHasOpened();
     }
 
-    private void setFlashModel() {
-        mParams = mCamera.getParameters();
-        mParams.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH); //设置camera参数为Torch模式
-        mCamera.setParameters(mParams);
-    }
-
     private synchronized void openCamera(int id) {
         try {
             this.mCamera = Camera.open(id);
@@ -311,7 +290,6 @@ public class CameraInterface implements Camera.PreviewCallback {
             SELECTED_CAMERA = CAMERA_POST_POSITION;
         }
         doDestroyCamera();
-        LogUtil.i("open start");
         openCamera(SELECTED_CAMERA);
 //        mCamera = Camera.open();
         if (Build.VERSION.SDK_INT > 17 && this.mCamera != null) {
@@ -321,7 +299,6 @@ public class CameraInterface implements Camera.PreviewCallback {
                 e.printStackTrace();
             }
         }
-        LogUtil.i("open end");
         doStartPreview(holder, screenProp);
     }
 
@@ -329,9 +306,6 @@ public class CameraInterface implements Camera.PreviewCallback {
      * doStartPreview
      */
     public void doStartPreview(SurfaceHolder holder, float screenProp) {
-        if (isPreviewing) {
-            LogUtil.i("doStartPreview isPreviewing");
-        }
         if (this.screenProp < 0) {
             this.screenProp = screenProp;
         }

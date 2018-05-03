@@ -3,7 +3,6 @@ package com.meitu.netlib.constraintdemo.camera.state;
 import android.graphics.Bitmap;
 import android.view.SurfaceHolder;
 
-import com.meitu.netlib.constraintdemo.camera.util.LogUtil;
 import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
 
 
@@ -32,7 +31,6 @@ class PreviewState implements State {
 
     @Override
     public void foucs(float x, float y, CameraInterface.FocusCallback callback) {
-        LogUtil.i("preview state foucs");
         if (machine.getView().handlerFoucs(x, y)) {
             CameraInterface.getInstance().handleFocus(machine.getContext(), x, y, callback);
         }
@@ -55,24 +53,20 @@ class PreviewState implements State {
             public void captureResult(Bitmap bitmap, boolean isVertical) {
                 machine.getView().showPicture(bitmap, isVertical);
                 machine.setState(machine.getBorrowPictureState());
-                LogUtil.i("capture");
             }
         });
     }
 
     @Override
     public void cancle(SurfaceHolder holder, float screenProp) {
-        LogUtil.i("浏览状态下,没有 cancle 事件");
     }
 
     @Override
     public void confirm() {
-        LogUtil.i("浏览状态下,没有 confirm 事件");
     }
 
     @Override
     public void zoom(float zoom, int type) {
-        LogUtil.i(TAG, "zoom");
         CameraInterface.getInstance().setZoom(zoom, type);
     }
 

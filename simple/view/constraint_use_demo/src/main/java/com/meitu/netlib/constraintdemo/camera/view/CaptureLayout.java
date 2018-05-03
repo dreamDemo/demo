@@ -1,9 +1,5 @@
 package com.meitu.netlib.constraintdemo.camera.view;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.util.AttributeSet;
@@ -16,7 +12,6 @@ import android.widget.ImageView;
 
 import com.meitu.netlib.constraintdemo.camera.listener.CaptureListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ClickListener;
-import com.meitu.netlib.constraintdemo.camera.listener.ReturnListener;
 import com.meitu.netlib.constraintdemo.camera.listener.TypeListener;
 
 
@@ -28,7 +23,6 @@ public class CaptureLayout extends FrameLayout {
 
     private CaptureListener captureLisenter;    //拍照按钮监听
     private TypeListener typeLisenter;          //拍照或录制后接结果按钮监听
-    private ReturnListener returnListener;      //退出按钮监听
     private ClickListener leftClickListener;    //左边按钮监听
     private ClickListener rightClickListener;   //右边按钮监听
 
@@ -38,10 +32,6 @@ public class CaptureLayout extends FrameLayout {
 
     public void setCaptureLisenter(CaptureListener captureLisenter) {
         this.captureLisenter = captureLisenter;
-    }
-
-    public void setReturnLisenter(ReturnListener returnListener) {
-        this.returnListener = returnListener;
     }
 
     private CaptureButton btn_capture;      //拍照按钮
@@ -99,35 +89,6 @@ public class CaptureLayout extends FrameLayout {
         btn_confirm.setVisibility(GONE);
     }
 
-    public void startTypeBtnAnimator() {
-        //拍照录制结果后的动画
-        if (this.iconLeft != 0)
-            iv_custom_left.setVisibility(GONE);
-        else
-            btn_return.setVisibility(GONE);
-        if (this.iconRight != 0)
-            iv_custom_right.setVisibility(GONE);
-        btn_capture.setVisibility(GONE);
-        btn_cancel.setVisibility(VISIBLE);
-        btn_confirm.setVisibility(VISIBLE);
-        btn_cancel.setClickable(false);
-        btn_confirm.setClickable(false);
-        ObjectAnimator animator_cancel = ObjectAnimator.ofFloat(btn_cancel, "translationX", layout_width / 4, 0);
-        ObjectAnimator animator_confirm = ObjectAnimator.ofFloat(btn_confirm, "translationX", -layout_width / 4, 0);
-
-        AnimatorSet set = new AnimatorSet();
-        set.playTogether(animator_cancel, animator_confirm);
-        set.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-                btn_cancel.setClickable(true);
-                btn_confirm.setClickable(true);
-            }
-        });
-        set.setDuration(200);
-        set.start();
-    }
 
 
     private void initView() {
@@ -158,7 +119,6 @@ public class CaptureLayout extends FrameLayout {
                 if (typeLisenter != null) {
                     typeLisenter.cancel();
                 }
-//                resetCaptureLayout();
             }
         });
 
@@ -174,7 +134,6 @@ public class CaptureLayout extends FrameLayout {
                 if (typeLisenter != null) {
                     typeLisenter.confirm();
                 }
-//                resetCaptureLayout();
             }
         });
 
@@ -245,11 +204,6 @@ public class CaptureLayout extends FrameLayout {
             btn_return.setVisibility(VISIBLE);
         if (this.iconRight != 0)
             iv_custom_right.setVisibility(VISIBLE);
-    }
-
-
-    public void setDuration(int duration) {
-        btn_capture.setDuration(duration);
     }
 
     public void setButtonFeatures(int state) {
