@@ -16,7 +16,11 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Build;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.SurfaceHolder;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.meitu.netlib.constraintdemo.camera.listener.ErrorListener;
@@ -24,6 +28,7 @@ import com.meitu.netlib.constraintdemo.camera.util.AngleUtil;
 import com.meitu.netlib.constraintdemo.camera.util.CameraParamUtil;
 import com.meitu.netlib.constraintdemo.camera.util.CheckPermission;
 import com.meitu.netlib.constraintdemo.camera.util.ScreenUtils;
+import com.meitu.netlib.constraintdemo.utils.DimenHelper;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -63,6 +68,7 @@ public class CameraInterface implements Camera.PreviewCallback {
     private ImageView mSwitchView;
     private ImageView mFlashLamp;
     private ImageView mGallery;
+    private View mCaptureArea;
 
     private int preview_width;
     private int preview_height;
@@ -90,10 +96,11 @@ public class CameraInterface implements Camera.PreviewCallback {
         return mCameraInterface;
     }
 
-    public void setSwitchView(ImageView mSwitchView, ImageView mFlashLamp, ImageView mGallery) {
+    public void setSwitchView(ImageView mSwitchView, ImageView mFlashLamp, ImageView mGallery, View mCaptureArea) {
         this.mSwitchView = mSwitchView;
         this.mFlashLamp = mFlashLamp;
         this.mGallery = mGallery;
+        this.mCaptureArea = mCaptureArea;
         if (mSwitchView != null) {
             cameraAngle = CameraParamUtil.getInstance().getCameraDisplayOrientation(mSwitchView.getContext(),
                     SELECTED_CAMERA);
@@ -171,12 +178,36 @@ public class CameraInterface implements Camera.PreviewCallback {
             ObjectAnimator animC = ObjectAnimator.ofFloat(mSwitchView, "rotation", start_rotaion, end_rotation);
             ObjectAnimator animF = ObjectAnimator.ofFloat(mFlashLamp, "rotation", start_rotaion, end_rotation);
             ObjectAnimator animG = ObjectAnimator.ofFloat(mGallery, "rotation", start_rotaion, end_rotation);
+            ObjectAnimator animA = ObjectAnimator.ofFloat(mCaptureArea, "rotation", start_rotaion, end_rotation);
+            animA.setDuration(0);
+            animF.setDuration(500);
+            animG.setDuration(500);
+            animC.setDuration(500);
             AnimatorSet set = new AnimatorSet();
-            set.playTogether(animC, animF, animG);
-            set.setDuration(500);
+            updateCaptureArea(end_rotation);
+            set.playTogether(animC, animF, animG, animA);
             set.start();
             rotation = angle;
         }
+    }
+
+    private void updateCaptureArea(int end_rotation) {
+        View parentView = (View) mCaptureArea.getParent();
+        FrameLayout.LayoutParams parentParams = (FrameLayout.LayoutParams) parentView.getLayoutParams();
+        FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) mCaptureArea.getLayoutParams();
+        if (end_rotation == 0 || end_rotation == 180 || end_rotation == -180) {//竖屏
+            parentParams.bottomMargin = DimenHelper.dp2px(0);
+            layoutParams.height = DimenHelper.dp2px(250);
+            layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+            layoutParams.rightMargin = DimenHelper.dp2px(20);
+            layoutParams.leftMargin = DimenHelper.dp2px(20);
+        } else { // 横屏
+            parentParams.bottomMargin = DimenHelper.dp2px(100);
+            layoutParams.height = ScreenUtils.getScreenWidth(mGallery.getContext()) - DimenHelper.dp2px(80);
+            layoutParams.width = ScreenUtils.getScreenHeight(mGallery.getContext()) - DimenHelper.dp2px(100) - DimenHelper.dp2px(120);
+        }
+        parentView.setLayoutParams(parentParams);
+        mCaptureArea.setLayoutParams(layoutParams);
     }
 
     public void setZoom(float zoom, int type) {

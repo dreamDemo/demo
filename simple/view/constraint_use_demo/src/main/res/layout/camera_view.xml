@@ -53,8 +53,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:visibility="gone"
-            android:src="@drawable/ic_camera" />
+            android:src="@drawable/ic_camera"
+            android:visibility="gone" />
 
     </LinearLayout>
 
@@ -62,7 +62,7 @@
     <com.meitu.netlib.constraintdemo.camera.view.CaptureLayout
         android:id="@+id/capture_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:layout_gravity="bottom" />
 
     <com.meitu.netlib.constraintdemo.camera.view.FoucsView
@@ -71,4 +71,36 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="invisible" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/capture_area"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_camera_tag"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="保持水平视角，在线框内拍车"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </FrameLayout>
 </FrameLayout>
