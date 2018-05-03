@@ -15,8 +15,6 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Build;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.ViewGroup;
@@ -312,7 +310,6 @@ public class CameraInterface implements Camera.PreviewCallback {
                 this.mCamera.enableShutterSound(false);
             } catch (Exception e) {
                 e.printStackTrace();
-                Log.e("CJT", "enable shutter sound faild");
             }
         }
     }
@@ -379,7 +376,6 @@ public class CameraInterface implements Camera.PreviewCallback {
                 mCamera.setPreviewCallback(this); //每一帧回调
                 mCamera.startPreview();//启动浏览
                 isPreviewing = true;
-                Log.i(TAG, "=== Start Preview ===");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -397,7 +393,6 @@ public class CameraInterface implements Camera.PreviewCallback {
                 //这句要在stopPreview后执行，不然会卡顿或者花屏
                 mCamera.setPreviewDisplay(null);
                 isPreviewing = false;
-                Log.i(TAG, "=== Stop Preview ===");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -422,12 +417,10 @@ public class CameraInterface implements Camera.PreviewCallback {
                 mCamera.release();
                 mCamera = null;
 //                destroyCameraInterface();
-                Log.i(TAG, "=== Destroy Camera ===");
             } catch (IOException e) {
                 e.printStackTrace();
             }
         } else {
-            Log.i(TAG, "=== Camera  Null===");
         }
     }
 
@@ -449,7 +442,6 @@ public class CameraInterface implements Camera.PreviewCallback {
                 break;
         }
 //
-        Log.i("CJT", angle + " = " + cameraAngle + " = " + nowAngle);
         mCamera.takePicture(null, null, new Camera.PictureCallback() {
             @Override
             public void onPictureTaken(byte[] data, Camera camera) {
@@ -504,7 +496,6 @@ public class CameraInterface implements Camera.PreviewCallback {
             focusAreas.add(new Camera.Area(focusRect, 800));
             params.setFocusAreas(focusAreas);
         } else {
-            Log.i(TAG, "focus areas not supported");
             callback.focusSuccess();
             return;
         }
@@ -528,7 +519,6 @@ public class CameraInterface implements Camera.PreviewCallback {
                 }
             });
         } catch (Exception e) {
-            Log.e(TAG, "autoFocus failer");
         }
     }
 
