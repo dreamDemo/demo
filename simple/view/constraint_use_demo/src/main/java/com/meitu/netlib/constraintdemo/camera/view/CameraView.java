@@ -18,7 +18,7 @@ import android.widget.VideoView;
 
 import com.meitu.netlib.constraintdemo.R;
 import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
-import com.meitu.netlib.constraintdemo.camera.callback.CameraView;
+import com.meitu.netlib.constraintdemo.camera.callback.CameraViewInterface;
 import com.meitu.netlib.constraintdemo.camera.listener.CaptureListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ClickListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ErrorListener;
@@ -31,8 +31,8 @@ import com.meitu.netlib.constraintdemo.camera.util.ScreenUtils;
 /**
  * create by sunyuxin
  */
-public class Camera1View extends FrameLayout implements CameraInterface.CameraOpenOverCallback, SurfaceHolder
-        .Callback, CameraView {
+public class CameraView extends FrameLayout implements CameraInterface.CameraOpenOverCallback, SurfaceHolder
+        .Callback, CameraViewInterface {
 
     //Camera状态机
     private CameraMachine machine;
@@ -84,22 +84,22 @@ public class Camera1View extends FrameLayout implements CameraInterface.CameraOp
     private boolean firstTouch = true;
     private float firstTouchLength = 0;
 
-    public Camera1View(Context context) {
+    public CameraView(Context context) {
         this(context, null);
     }
 
-    public Camera1View(Context context, AttributeSet attrs) {
+    public CameraView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public Camera1View(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CameraView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mContext = context;
         //get AttributeSet
-        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.Camera1View, defStyleAttr, 0);
-        iconSrc = a.getResourceId(R.styleable.Camera1View_iconSrc, R.drawable.ic_camera);
-        iconLeft = a.getResourceId(R.styleable.Camera1View_iconLeft, 0);
-        iconRight = a.getResourceId(R.styleable.Camera1View_iconRight, 0);
+        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.CameraView, defStyleAttr, 0);
+        iconSrc = a.getResourceId(R.styleable.CameraView_iconSrc, R.drawable.ic_camera);
+        iconLeft = a.getResourceId(R.styleable.CameraView_iconLeft, 0);
+        iconRight = a.getResourceId(R.styleable.CameraView_iconRight, 0);
         a.recycle();
         initData();
         initView();
@@ -229,7 +229,7 @@ public class Camera1View extends FrameLayout implements CameraInterface.CameraOp
         new Thread() {
             @Override
             public void run() {
-                CameraInterface.getInstance().doOpenCamera(Camera1View.this);
+                CameraInterface.getInstance().doOpenCamera(CameraView.this);
             }
         }.start();
     }

@@ -12,7 +12,7 @@ import android.view.View;
 
 import com.meitu.netlib.constraintdemo.camera.listener.CaptureListener;
 
-import static com.meitu.netlib.constraintdemo.camera.view.Camera1View.BUTTON_STATE_ONLY_CAPTURE;
+import static com.meitu.netlib.constraintdemo.camera.view.CameraView.BUTTON_STATE_ONLY_CAPTURE;
 
 
 /**

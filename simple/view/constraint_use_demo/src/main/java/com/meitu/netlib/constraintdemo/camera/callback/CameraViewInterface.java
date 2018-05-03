@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 /**
  * create by sunyuxin
  */
-public interface CameraView {
+public interface CameraViewInterface {
     void resetState(int type);
 
     void confirmState(int type);

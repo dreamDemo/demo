@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import com.meitu.netlib.constraintdemo.R;
 import com.meitu.netlib.constraintdemo.camera.listener.JCameraListener;
-import com.meitu.netlib.constraintdemo.camera.view.Camera1View;
+import com.meitu.netlib.constraintdemo.camera.view.CameraView;
 
 /**
  * Created by sunyuxin on 2018/5/2.
@@ -32,14 +32,14 @@ public class Camera1Activity extends Activity {
     }
 
     private final int GET_PERMISSION_REQUEST = 100; //权限申请自定义码
-    private Camera1View mCameraView;
+    private CameraView mCameraView;
     private boolean granted = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera_activity);
-        mCameraView = (Camera1View) findViewById(R.id.jcameraview);
+        mCameraView = (CameraView) findViewById(R.id.jcameraview);
         //JCameraView监听
         mCameraView.setJCameraLisenter(new JCameraListener() {
             @Override
