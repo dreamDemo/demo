@@ -4,7 +4,7 @@ import android.view.SurfaceHolder;
 
 import com.meitu.netlib.constraintdemo.camera.util.LogUtil;
 import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
-import com.meitu.netlib.constraintdemo.camera.view.JCameraView;
+import com.meitu.netlib.constraintdemo.camera.view.Camera1View;
 
 
 /**
@@ -52,13 +52,13 @@ public class BorrowPictureState implements State {
     @Override
     public void cancle(SurfaceHolder holder, float screenProp) {
         CameraInterface.getInstance().doStartPreview(holder, screenProp);
-        machine.getView().resetState(JCameraView.TYPE_PICTURE);
+        machine.getView().resetState(Camera1View.TYPE_PICTURE);
         machine.setState(machine.getPreviewState());
     }
 
     @Override
     public void confirm() {
-        machine.getView().confirmState(JCameraView.TYPE_PICTURE);
+        machine.getView().confirmState(Camera1View.TYPE_PICTURE);
         machine.setState(machine.getPreviewState());
     }
 

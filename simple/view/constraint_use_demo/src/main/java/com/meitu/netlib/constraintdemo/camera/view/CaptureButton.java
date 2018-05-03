@@ -15,9 +15,8 @@ import android.view.View;
 import com.meitu.netlib.constraintdemo.camera.listener.CaptureListener;
 import com.meitu.netlib.constraintdemo.camera.util.LogUtil;
 
-import static com.meitu.netlib.constraintdemo.camera.view.JCameraView.BUTTON_STATE_BOTH;
-import static com.meitu.netlib.constraintdemo.camera.view.JCameraView.BUTTON_STATE_ONLY_CAPTURE;
-import static com.meitu.netlib.constraintdemo.camera.view.JCameraView.BUTTON_STATE_ONLY_RECORDER;
+import static com.meitu.netlib.constraintdemo.camera.view.Camera1View.BUTTON_STATE_BOTH;
+import static com.meitu.netlib.constraintdemo.camera.view.Camera1View.BUTTON_STATE_ONLY_CAPTURE;
 
 
 /**

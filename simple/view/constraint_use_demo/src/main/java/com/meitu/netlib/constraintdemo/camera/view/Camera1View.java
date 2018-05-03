@@ -42,7 +42,7 @@ import java.io.IOException;
 /**
  * create by sunyuxin
  */
-public class JCameraView extends FrameLayout implements CameraInterface.CameraOpenOverCallback, SurfaceHolder
+public class Camera1View extends FrameLayout implements CameraInterface.CameraOpenOverCallback, SurfaceHolder
         .Callback, CameraView {
 //    private static final String TAG = "JCameraView";
 
@@ -113,27 +113,27 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
     private boolean firstTouch = true;
     private float firstTouchLength = 0;
 
-    public JCameraView(Context context) {
+    public Camera1View(Context context) {
         this(context, null);
     }
 
-    public JCameraView(Context context, AttributeSet attrs) {
+    public Camera1View(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public JCameraView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public Camera1View(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mContext = context;
         //get AttributeSet
-        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.JCameraView, defStyleAttr, 0);
-        iconSize = a.getDimensionPixelSize(R.styleable.JCameraView_iconSize, (int) TypedValue.applyDimension(
+        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.Camera1View, defStyleAttr, 0);
+        iconSize = a.getDimensionPixelSize(R.styleable.Camera1View_iconSize, (int) TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_SP, 35, getResources().getDisplayMetrics()));
-        iconMargin = a.getDimensionPixelSize(R.styleable.JCameraView_iconMargin, (int) TypedValue.applyDimension(
+        iconMargin = a.getDimensionPixelSize(R.styleable.Camera1View_iconMargin, (int) TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_SP, 15, getResources().getDisplayMetrics()));
-        iconSrc = a.getResourceId(R.styleable.JCameraView_iconSrc, R.drawable.ic_camera);
-        iconLeft = a.getResourceId(R.styleable.JCameraView_iconLeft, 0);
-        iconRight = a.getResourceId(R.styleable.JCameraView_iconRight, 0);
-        duration = a.getInteger(R.styleable.JCameraView_duration_max, 10 * 1000);       //没设置默认为10s
+        iconSrc = a.getResourceId(R.styleable.Camera1View_iconSrc, R.drawable.ic_camera);
+        iconLeft = a.getResourceId(R.styleable.Camera1View_iconLeft, 0);
+        iconRight = a.getResourceId(R.styleable.Camera1View_iconRight, 0);
+        duration = a.getInteger(R.styleable.Camera1View_duration_max, 10 * 1000);       //没设置默认为10s
         a.recycle();
         initData();
         initView();
@@ -267,7 +267,7 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
         new Thread() {
             @Override
             public void run() {
-                CameraInterface.getInstance().doOpenCamera(JCameraView.this);
+                CameraInterface.getInstance().doOpenCamera(Camera1View.this);
             }
         }.start();
     }
@@ -351,11 +351,6 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
     /**************************************************
      * 对外提供的API                     *
      **************************************************/
-
-    public void setSaveVideoPath(String path) {
-        CameraInterface.getInstance().setSaveVideoPath(path);
-    }
-
 
     public void setJCameraLisenter(JCameraListener jCameraLisenter) {
         this.jCameraLisenter = jCameraLisenter;
@@ -445,7 +440,7 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
     @Override
     public void playVideo(Bitmap firstFrame, final String url) {
         videoUrl = url;
-        JCameraView.this.firstFrame = firstFrame;
+        Camera1View.this.firstFrame = firstFrame;
         new Thread(new Runnable() {
             @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override

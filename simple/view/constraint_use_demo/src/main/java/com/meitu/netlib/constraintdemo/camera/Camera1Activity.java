@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import com.meitu.netlib.constraintdemo.R;
 import com.meitu.netlib.constraintdemo.camera.listener.JCameraListener;
-import com.meitu.netlib.constraintdemo.camera.view.JCameraView;
+import com.meitu.netlib.constraintdemo.camera.view.Camera1View;
 
 import java.io.File;
 
@@ -35,20 +35,16 @@ public class Camera1Activity extends Activity {
     }
 
     private final int GET_PERMISSION_REQUEST = 100; //权限申请自定义码
-    private JCameraView jCameraView;
+    private Camera1View mCameraView;
     private boolean granted = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera_activity);
-        jCameraView = (JCameraView) findViewById(R.id.jcameraview);
-
-        //设置视频保存路径
-        jCameraView.setSaveVideoPath(Environment.getExternalStorageDirectory().getPath() + File.separator + "JCamera");
-
+        mCameraView = (Camera1View) findViewById(R.id.jcameraview);
         //JCameraView监听
-        jCameraView.setJCameraLisenter(new JCameraListener() {
+        mCameraView.setJCameraLisenter(new JCameraListener() {
             @Override
             public void captureSuccess(Bitmap bitmap) {
                 //获取图片bitmap
@@ -116,14 +112,14 @@ public class Camera1Activity extends Activity {
     protected void onResume() {
         super.onResume();
         if (granted) {
-            jCameraView.onResume();
+            mCameraView.onResume();
         }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        jCameraView.onPause();
+        mCameraView.onPause();
     }
 
     @TargetApi(23)
@@ -153,7 +149,7 @@ public class Camera1Activity extends Activity {
                 }
                 if (size == 0) {
                     granted = true;
-                    jCameraView.onResume();
+                    mCameraView.onResume();
                 } else {
                     Toast.makeText(this, "请到设置-权限管理中开启", Toast.LENGTH_SHORT).show();
                     finish();

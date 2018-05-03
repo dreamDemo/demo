@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
 
-    <com.meitu.netlib.constraintdemo.camera.view.JCameraView
+    <com.meitu.netlib.constraintdemo.camera.view.Camera1View
         android:id="@+id/jcameraview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
