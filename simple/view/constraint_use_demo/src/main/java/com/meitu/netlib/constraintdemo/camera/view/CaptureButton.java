@@ -12,7 +12,6 @@ import android.view.View;
 
 import com.meitu.netlib.constraintdemo.camera.listener.CaptureListener;
 
-import static com.meitu.netlib.constraintdemo.camera.view.Camera1View.BUTTON_STATE_BOTH;
 import static com.meitu.netlib.constraintdemo.camera.view.Camera1View.BUTTON_STATE_ONLY_CAPTURE;
 
 
@@ -75,7 +74,7 @@ public class CaptureButton extends View {
 
 
         state = STATE_IDLE;                //初始化为空闲状态
-        button_state = BUTTON_STATE_BOTH;  //初始化按钮为可录制可拍照
+        button_state = BUTTON_STATE_ONLY_CAPTURE;  //初始化按钮为可拍照
 
         center_X = (button_size + outside_add_size * 2) / 2;
         center_Y = (button_size + outside_add_size * 2) / 2;
@@ -130,8 +129,7 @@ public class CaptureButton extends View {
         switch (state) {
             //当前是点击按下
             case STATE_PRESS:
-                if (captureLisenter != null && (button_state == BUTTON_STATE_ONLY_CAPTURE || button_state ==
-                        BUTTON_STATE_BOTH)) {
+                if (captureLisenter != null && button_state == BUTTON_STATE_ONLY_CAPTURE) {
                     startCaptureAnimation(button_inside_radius);
                 } else {
                     state = STATE_IDLE;

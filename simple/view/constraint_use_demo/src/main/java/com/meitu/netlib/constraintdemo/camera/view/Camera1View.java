@@ -49,7 +49,6 @@ public class Camera1View extends FrameLayout implements CameraInterface.CameraOp
 
 
     public static final int BUTTON_STATE_ONLY_CAPTURE = 0x101;      //只能拍照
-    public static final int BUTTON_STATE_BOTH = 0x103;              //两者都可以
 
 
     //回调监听
