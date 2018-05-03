@@ -62,6 +62,7 @@ public class Camera1View extends FrameLayout implements CameraInterface.CameraOp
     private ImageView mSwitchCamera;
     private ImageView mClose;
     private ImageView mFlashLamp;
+    private ImageView mGallery;
     private CaptureLayout mCaptureLayout;
     private FoucsView mFoucsView;
 
@@ -130,6 +131,7 @@ public class Camera1View extends FrameLayout implements CameraInterface.CameraOp
             }
         });
         mCaptureLayout = (CaptureLayout) view.findViewById(R.id.capture_layout);
+        mGallery = (ImageView) mCaptureLayout.findViewById(R.id.gallery);
         mCaptureLayout.setIconSrc(iconLeft, iconRight);
         mFoucsView = (FoucsView) view.findViewById(R.id.fouce_view);
         mVideoView.getHolder().addCallback(this);
@@ -208,7 +210,7 @@ public class Camera1View extends FrameLayout implements CameraInterface.CameraOp
     public void onResume() {
         resetState(TYPE_DEFAULT); //重置状态
         CameraInterface.getInstance().registerSensorManager(mContext);
-        CameraInterface.getInstance().setSwitchView(mSwitchCamera, mFlashLamp);
+        CameraInterface.getInstance().setSwitchView(mSwitchCamera, mFlashLamp, mGallery);
         machine.start(mVideoView.getHolder(), screenProp);
     }
 

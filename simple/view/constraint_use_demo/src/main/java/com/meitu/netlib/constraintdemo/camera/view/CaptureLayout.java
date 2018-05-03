@@ -10,6 +10,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.meitu.netlib.constraintdemo.R;
 import com.meitu.netlib.constraintdemo.camera.listener.CaptureListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ClickListener;
 import com.meitu.netlib.constraintdemo.camera.listener.TypeListener;
@@ -37,7 +38,7 @@ public class CaptureLayout extends FrameLayout {
     private CaptureButton btn_capture;      //拍照按钮
     private TypeButton btn_confirm;         //确认按钮
     private TypeButton btn_cancel;          //取消按钮
-    private ReturnButton btn_return;        //返回按钮
+    private ImageView btn_return;           //返回按钮
     private ImageView iv_custom_left;            //左边自定义按钮
     private ImageView iv_custom_right;            //右边自定义按钮
 
@@ -138,7 +139,9 @@ public class CaptureLayout extends FrameLayout {
         });
 
         //返回按钮
-        btn_return = new ReturnButton(getContext(), (int) (button_size / 2.5f));
+        btn_return = new ImageView(getContext());
+        btn_return.setImageResource(R.mipmap.ic_launcher);
+        btn_return.setId(R.id.gallery);
         LayoutParams btn_return_param = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         btn_return_param.gravity = Gravity.CENTER_VERTICAL;
         btn_return_param.setMargins(layout_width / 6, 0, 0, 0);

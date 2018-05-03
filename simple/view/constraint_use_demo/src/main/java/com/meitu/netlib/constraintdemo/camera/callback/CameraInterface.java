@@ -62,6 +62,7 @@ public class CameraInterface implements Camera.PreviewCallback {
 
     private ImageView mSwitchView;
     private ImageView mFlashLamp;
+    private ImageView mGallery;
 
     private int preview_width;
     private int preview_height;
@@ -89,9 +90,10 @@ public class CameraInterface implements Camera.PreviewCallback {
         return mCameraInterface;
     }
 
-    public void setSwitchView(ImageView mSwitchView, ImageView mFlashLamp) {
+    public void setSwitchView(ImageView mSwitchView, ImageView mFlashLamp, ImageView mGallery) {
         this.mSwitchView = mSwitchView;
         this.mFlashLamp = mFlashLamp;
+        this.mGallery = mGallery;
         if (mSwitchView != null) {
             cameraAngle = CameraParamUtil.getInstance().getCameraDisplayOrientation(mSwitchView.getContext(),
                     SELECTED_CAMERA);
@@ -168,8 +170,9 @@ public class CameraInterface implements Camera.PreviewCallback {
             }
             ObjectAnimator animC = ObjectAnimator.ofFloat(mSwitchView, "rotation", start_rotaion, end_rotation);
             ObjectAnimator animF = ObjectAnimator.ofFloat(mFlashLamp, "rotation", start_rotaion, end_rotation);
+            ObjectAnimator animG = ObjectAnimator.ofFloat(mGallery, "rotation", start_rotaion, end_rotation);
             AnimatorSet set = new AnimatorSet();
-            set.playTogether(animC, animF);
+            set.playTogether(animC, animF, animG);
             set.setDuration(500);
             set.start();
             rotation = angle;
