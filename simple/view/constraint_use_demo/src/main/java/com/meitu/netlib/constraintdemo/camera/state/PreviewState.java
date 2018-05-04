@@ -3,6 +3,7 @@ package com.meitu.netlib.constraintdemo.camera.state;
 import android.graphics.Bitmap;
 import android.view.SurfaceHolder;
 
+import com.meitu.netlib.constraintdemo.BasicConfig;
 import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
 
 
@@ -32,7 +33,7 @@ class PreviewState implements State {
     @Override
     public void foucs(float x, float y, CameraInterface.FocusCallback callback) {
         if (machine.getView().handlerFoucs(x, y)) {
-            CameraInterface.getInstance().handleFocus(machine.getContext(), x, y, callback);
+            CameraInterface.getInstance().handleFocus(x, y, callback);
         }
     }
 

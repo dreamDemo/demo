@@ -15,12 +15,15 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.meitu.netlib.constraintdemo.BasicConfig;
 import com.meitu.netlib.constraintdemo.camera.listener.ErrorListener;
 import com.meitu.netlib.constraintdemo.camera.util.AngleUtil;
 import com.meitu.netlib.constraintdemo.camera.util.CameraParamUtil;
@@ -186,6 +189,9 @@ public class CameraInterface implements Camera.PreviewCallback {
             set.playTogether(animC, animF, animG, animA);
             set.start();
             rotation = angle;
+            handleFocus(ScreenUtils.getScreenHeight(BasicConfig.getContext()) / 2.0f
+                    , ScreenUtils.getScreenHeight(BasicConfig.getContext()) / 2.0f,
+                    null);
         }
     }
 
@@ -293,6 +299,15 @@ public class CameraInterface implements Camera.PreviewCallback {
             openCamera(SELECTED_CAMERA);
         }
         callback.cameraHasOpened();
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                handleFocus(ScreenUtils.getScreenHeight(BasicConfig.getContext()) / 2.0f
+                        , ScreenUtils.getScreenHeight(BasicConfig.getContext()) / 2.0f,
+                        null);
+            }
+        }, 1000);
+
     }
 
     private synchronized void openCamera(int id) {
@@ -484,19 +499,20 @@ public class CameraInterface implements Camera.PreviewCallback {
 
     int handlerTime = 0;
 
-    public void handleFocus(final Context context, final float x, final float y, final FocusCallback callback) {
+    public void handleFocus(final float x, final float y, final FocusCallback callback) {
         if (mCamera == null) {
             return;
         }
         final Camera.Parameters params = mCamera.getParameters();
-        Rect focusRect = calculateTapArea(x, y, 1f, context);
+        Rect focusRect = calculateTapArea(x, y, 1f, BasicConfig.getContext());
         mCamera.cancelAutoFocus();
         if (params.getMaxNumFocusAreas() > 0) {
             List<Camera.Area> focusAreas = new ArrayList<>();
             focusAreas.add(new Camera.Area(focusRect, 800));
             params.setFocusAreas(focusAreas);
         } else {
-            callback.focusSuccess();
+            if (callback != null)
+                callback.focusSuccess();
             return;
         }
         final String currentFocusMode = params.getFocusMode();
@@ -511,10 +527,11 @@ public class CameraInterface implements Camera.PreviewCallback {
                         params.setFocusMode(currentFocusMode);
                         camera.setParameters(params);
                         handlerTime = 0;
-                        callback.focusSuccess();
+                        if (callback != null)
+                            callback.focusSuccess();
                     } else {
                         handlerTime++;
-                        handleFocus(context, x, y, callback);
+                        handleFocus(x, y, callback);
                     }
                 }
             });

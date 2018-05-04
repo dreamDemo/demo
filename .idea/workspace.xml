@@ -6,8 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="syx_" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
@@ -17,9 +16,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java" />
     </list>
     <ignored path="demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,13 +115,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Camera1Activity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java">
+      <file leaf-file-name="CameraInterface.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="136" column="53" lean-forward="false" selection-start-line="136" selection-start-column="53" selection-end-line="136" selection-end-column="53" />
+            <state relative-caret-position="215">
+              <caret line="547" column="67" lean-forward="false" selection-start-line="547" selection-start-column="60" selection-end-line="547" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#9702#9703#0" expanded="true" />
+                <element signature="e#9740#9741#0" expanded="true" />
+                <element signature="e#10720#11064#0" expanded="true" />
+                <element signature="e#11063#11064#0" expanded="true" />
+                <element signature="e#15946#16923#0" expanded="true" />
+                <element signature="e#16922#16923#0" expanded="true" />
+                <element signature="e#18447#19150#0" expanded="true" />
+                <element signature="e#19149#19150#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,20 +139,17 @@
         <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="213" column="19" lean-forward="false" selection-start-line="213" selection-start-column="19" selection-end-line="213" selection-end-column="19" />
-              <folding>
-                <element signature="e#8206#8375#0" expanded="true" />
-                <element signature="e#8374#8375#0" expanded="true" />
-              </folding>
+              <caret line="222" column="38" lean-forward="false" selection-start-line="222" selection-start-column="38" selection-end-line="222" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java">
+      <file leaf-file-name="PreviewState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/state/PreviewState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="482" column="5" lean-forward="false" selection-start-line="482" selection-start-column="5" selection-end-line="482" selection-end-column="5" />
+            <state relative-caret-position="224">
+              <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,36 +168,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>borrowVideoState</find>
-      <find>cameraOpenOverCallback</find>
-      <find>errorLisenter</find>
-      <find>Mechine</find>
-      <find>mCameraInterface</find>
-      <find>sensorEventListener</find>
-      <find>borrowPictureState</find>
-      <find>state</find>
+      <find>FLASH_MODE_AUTO</find>
+      <find>if (mCamera == null) {            openCamera(SELECTED_CAMERA);        }</find>
+      <find>re</find>
+      <find>re'l</find>
+      <find>re'le</find>
+      <find>relea</find>
+      <find>release</find>
+      <find>release(</find>
+      <find>release()</find>
+      <find>A</find>
+      <find>on</find>
+      <find>onA</find>
+      <find>onAu</find>
+      <find>onAuto</find>
+      <find>onAutoF</find>
+      <find>onAutoFo</find>
+      <find>onAutoFoc</find>
+      <find>onAutoFocu</find>
+      <find>onAutoFocus</find>
+      <find>PictureCallback</find>
+      <find>handlerTime</find>
+      <find>restParams</find>
+      <find>callback</find>
+      <find>SENSOR_SERVICE</find>
+      <find>setOneShotPreviewCallback</find>
+      <find>setPreviewCallback</find>
+      <find>mPreviewCallback</find>
       <find>machine</find>
-      <find>typeLisenter</find>
-      <find>btn_cancel</find>
-      <find>size</find>
-      <find>captureLisenter</find>
-      <find>btn_capture</find>
-      <find>.layout.</find>
-      <find>btn_return</find>
-      <find>mSwitchCamera</find>
-      <find>mFlashLamp</find>
-      <find>mSwitchView</find>
-      <find>rotation</find>
-      <find>mGallery</find>
-      <find>mCaptureLayout</find>
-      <find>mContext</find>
-      <find>mMetrics</find>
-      <find>mNodes</find>
-      <find>mCaptureArea</find>
-      <find>mDuration</find>
-      <find>Log</find>
-      <find>holder</find>
-      <find>mCamera</find>
+      <find>sensorEventListener</find>
+      <find>context</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -12341,8 +12343,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/expand/adapter/holder/ExpandTipShowHolder.java" />
-        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/expand/adapter/Camera1Activity.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/TypeButton.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraInterface.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/ReturnButton.java" />
@@ -12389,9 +12389,11 @@
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/layout/camera_view.xml" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/AngleUtil.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java" />
-        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java" />
+        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/IActivityLifiCycle.java" />
+        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java" />
+        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/SensorControler.java" />
+        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java" />
       </list>
     </option>
   </component>
@@ -12615,6 +12617,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="android.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Android API 25 Platform &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Android API 25 Platform &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -13083,6 +13133,10 @@
               <option name="myItemId" value="camera" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -13139,6 +13193,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="state" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constraint_use_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meitu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netlib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constraintdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camera" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -13266,6 +13374,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wrapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -13277,9 +13403,9 @@
     <property name="android.project.structure.last.selected" value="upload_demo" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="device.picker.selection" value="13c965ed" />
-    <property name="SearchEverywhereHistoryKey" value="A&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;Ca&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java&#10;Camera&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java&#10;.gitigno&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/.gitignore&#10;Acti&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;CameraOpenOverCallback&#9;PSI&#9;JAVA://com.meitu.netlib.constraintdemo.camera.callback.CameraInterface.CameraOpenOverCallback&#10;Android&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/AndroidManifest.xml&#10;Main&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java&#10;ic_camera_enhance_black_24dp.png&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/res/drawable-hdpi/ic_camera_enhance_black_24dp.png&#10;mani&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/AndroidManifest.xml&#10;Simpl&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/expand/adapter/SimpleAdapter.java&#10;MainActivity&#9;PSI&#9;JAVA://com.meitu.netlib.constraintdemo.MainActivity" />
+    <property name="SearchEverywhereHistoryKey" value="CameraVi&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java&#10;gradle&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/gradle/wrapper/gradle-wrapper.properties&#10;build.gr&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/build.gradle&#10;gradle.&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/gradle.properties&#10;A&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;Ca&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java&#10;Camera&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java&#10;.gitigno&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/.gitignore&#10;Acti&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;CameraOpenOverCallback&#9;PSI&#9;JAVA://com.meitu.netlib.constraintdemo.camera.callback.CameraInterface.CameraOpenOverCallback&#10;Android&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/AndroidManifest.xml&#10;Main&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java&#10;ic_camera_enhance_black_24dp.png&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/res/drawable-hdpi/ic_camera_enhance_black_24dp.png&#10;mani&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/AndroidManifest.xml&#10;Simpl&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/expand/adapter/SimpleAdapter.java&#10;MainActivity&#9;PSI&#9;JAVA://com.meitu.netlib.constraintdemo.MainActivity" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.3.0" />
-    <property name="DEBUGGABLE_DEVICE" value="samsung-sm_c9000-13c965ed" />
+    <property name="DEBUGGABLE_DEVICE" value="13c965ed" />
     <property name="DEBUGGABLE_PROCESS" value="com.meitu.netlib.constraintdemo" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="DEBUGGER_ID" value="Java" />
@@ -13294,11 +13420,11 @@
       <recent name="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.meitu.netlib.constraintdemo.camera.callback" />
       <recent name="com.meitu.netlib.constraintdemo" />
       <recent name="com.meitu.netlib.constraintdemo.utils" />
       <recent name="com.meitu.netlib.constraintdemo.camera" />
       <recent name="com.meitu.netlib.constraintdemo.camera.view" />
-      <recent name="com.meitu.netlib.constraintdemo.expand.adapter.holder" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/drawable-xxhdpi" />
@@ -13391,7 +13517,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525402892437" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525419270616" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -13439,7 +13565,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525402892437" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525419270616" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -13665,7 +13791,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525402892643" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525419270662" />
       </method>
     </configuration>
     <configuration default="false" name="constraint_use_demo" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -13714,7 +13840,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525402892643" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525419270662" />
       </method>
     </configuration>
     <configuration default="false" name="imageloader" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -13763,7 +13889,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525402892644" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525419270662" />
       </method>
     </configuration>
     <configuration default="false" name="interviewfortest" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -13812,7 +13938,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525402892644" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525419270662" />
       </method>
     </configuration>
     <configuration default="false" name="okhttp_use_demo" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -13861,7 +13987,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525402892644" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525419270662" />
       </method>
     </configuration>
     <configuration default="false" name="retrofit_use_demo" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -13910,7 +14036,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525402892644" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525419270662" />
       </method>
     </configuration>
     <configuration default="false" name="volley_use_demo" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -13959,7 +14085,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525402892644" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525419270662" />
       </method>
     </configuration>
     <list size="7">
@@ -14022,7 +14148,7 @@
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46673286" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28599802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -14035,7 +14161,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="-113" y="-980" width="1720" height="880" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24600638" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24600638" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38033763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -14098,21 +14224,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java</url>
-          <line>372</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java</url>
-          <line>299</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
@@ -14122,66 +14234,7 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/listener/TypeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/listener/ResultListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/layout/camera_activity.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/widget/VideoView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/listener/JCameraListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/listener/ReturnListener.java" />
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/listener/ErrorListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/LogUtil.java" />
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/state/BorrowVideoState.java" />
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/hardware/SensorManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="80" column="22" lean-forward="false" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/Context.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
@@ -14194,7 +14247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14286,7 +14338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14320,8 +14371,8 @@
         <state relative-caret-position="193">
           <caret line="12482" column="21" lean-forward="false" selection-start-line="12482" selection-start-column="21" selection-end-line="12482" selection-end-column="21" />
           <folding>
-            <element signature="e#496679#496680#0" expanded="true" />
-            <element signature="e#496706#496707#0" expanded="true" />
+            <element signature="e#496679#496680#0" expanded="false" />
+            <element signature="e#496706#496707#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -14337,7 +14388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="344" column="24" lean-forward="false" selection-start-line="344" selection-start-column="24" selection-end-line="344" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14379,7 +14429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14401,61 +14450,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/CheckPermission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="77" column="39" lean-forward="false" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/state/CameraMachine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/state/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/CameraParamUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="87" column="19" lean-forward="false" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/hardware/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="626" column="22" lean-forward="false" selection-start-line="626" selection-start-column="22" selection-end-line="626" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/Camera1View.java" />
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/state/PreviewState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/res/layout/camera_view.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -14475,10 +14470,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java">
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="482" column="5" lean-forward="false" selection-start-line="482" selection-start-column="5" selection-end-line="482" selection-end-column="5" />
+        <state relative-caret-position="445">
+          <caret line="119" column="23" lean-forward="false" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/CheckPermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="83" column="52" lean-forward="false" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/CameraParamUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding>
+            <element signature="e#291#329#2" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/IActivityLifiCycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraViewInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-25/android.jar!/java/lang/Override.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/hardware/SensorManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="720" column="19" lean-forward="false" selection-start-line="720" selection-start-column="19" selection-end-line="720" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/hardware/camera2/legacy/LegacyFocusStateMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="204" column="24" lean-forward="false" selection-start-line="204" selection-start-column="24" selection-end-line="204" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/hardware/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="451" column="33" lean-forward="true" selection-start-line="451" selection-start-column="33" selection-end-line="451" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/state/CameraMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/state/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/SensorControler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/state/PreviewState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -14488,20 +14611,25 @@
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="213" column="19" lean-forward="false" selection-start-line="213" selection-start-column="19" selection-end-line="213" selection-end-column="19" />
-          <folding>
-            <element signature="e#8206#8375#0" expanded="true" />
-            <element signature="e#8374#8375#0" expanded="true" />
-          </folding>
+          <caret line="222" column="38" lean-forward="false" selection-start-line="222" selection-start-column="38" selection-end-line="222" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java">
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="136" column="53" lean-forward="false" selection-start-line="136" selection-start-column="53" selection-end-line="136" selection-end-column="53" />
+        <state relative-caret-position="215">
+          <caret line="547" column="67" lean-forward="false" selection-start-line="547" selection-start-column="60" selection-end-line="547" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#9702#9703#0" expanded="true" />
+            <element signature="e#9740#9741#0" expanded="true" />
+            <element signature="e#10720#11064#0" expanded="true" />
+            <element signature="e#11063#11064#0" expanded="true" />
+            <element signature="e#15946#16923#0" expanded="true" />
+            <element signature="e#16922#16923#0" expanded="true" />
+            <element signature="e#18447#19150#0" expanded="true" />
+            <element signature="e#19149#19150#0" expanded="true" />
           </folding>
         </state>
       </provider>
