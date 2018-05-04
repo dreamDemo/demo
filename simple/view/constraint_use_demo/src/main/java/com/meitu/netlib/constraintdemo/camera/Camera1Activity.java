@@ -7,8 +7,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -17,6 +20,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.meitu.netlib.constraintdemo.R;
+import com.meitu.netlib.constraintdemo.camera.listener.ClickListener;
 import com.meitu.netlib.constraintdemo.camera.listener.JCameraListener;
 import com.meitu.netlib.constraintdemo.camera.view.CameraView;
 
@@ -24,14 +28,16 @@ import com.meitu.netlib.constraintdemo.camera.view.CameraView;
  * Created by sunyuxin on 2018/5/2.
  */
 
-public class Camera1Activity extends Activity {
+public class Camera1Activity extends Activity implements ClickListener, JCameraListener{
+    private Uri imageUri;
 
     public static void launch(Context context) {
         Intent intent = new Intent(context, Camera1Activity.class);
         context.startActivity(intent);
     }
 
-    private final int GET_PERMISSION_REQUEST = 100; //权限申请自定义码
+    private final static int GET_PERMISSION_REQUEST = 100; //权限申请自定义码
+    private final static int GALLERY_REQUEST_CODE = 101;
     private CameraView mCameraView;
     private boolean granted = false;
 
@@ -40,16 +46,34 @@ public class Camera1Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera_activity);
         mCameraView = (CameraView) findViewById(R.id.jcameraview);
-        //JCameraView监听
-        mCameraView.setJCameraLisenter(new JCameraListener() {
-            @Override
-            public void captureSuccess(Bitmap bitmap) {
-                //获取图片bitmap
-                Log.i("JCameraView", "bitmap = " + bitmap.getWidth());
-            }
-        });
-        //6.0动态权限获取
+        initAction();
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (granted) {
+            mCameraView.onResume();
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mCameraView.onPause();
+    }
+
+    private void initAction() {
+        mCameraView.setJCameraLisenter(this);
+        mCameraView.setLeftClickListener(this);
         getPermissions();
+    }
+
+    private void choosePhoto() {
+        Intent intentToPickPic = new Intent(Intent.ACTION_PICK, null);
+        intentToPickPic.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/jpeg");
+        startActivityForResult(intentToPickPic, GALLERY_REQUEST_CODE);
     }
 
     /**
@@ -57,16 +81,12 @@ public class Camera1Activity extends Activity {
      */
     private void getPermissions() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED &&
-                    ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED &&
-                    ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
                 //具有权限
                 granted = true;
             } else {
                 //不具有获取权限，需要进行权限申请
                 ActivityCompat.requestPermissions(Camera1Activity.this, new String[]{
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                        Manifest.permission.RECORD_AUDIO,
                         Manifest.permission.CAMERA}, GET_PERMISSION_REQUEST);
                 granted = false;
             }
@@ -93,20 +113,6 @@ public class Camera1Activity extends Activity {
         }
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (granted) {
-            mCameraView.onResume();
-        }
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        mCameraView.onPause();
-    }
-
     @TargetApi(23)
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
@@ -114,20 +120,8 @@ public class Camera1Activity extends Activity {
         if (requestCode == GET_PERMISSION_REQUEST) {
             int size = 0;
             if (grantResults.length >= 1) {
-                int writeResult = grantResults[0];
-                //读写内存权限
-                boolean writeGranted = writeResult == PackageManager.PERMISSION_GRANTED;//读写内存权限
-                if (!writeGranted) {
-                    size++;
-                }
-                //录音权限
-                int recordPermissionResult = grantResults[1];
-                boolean recordPermissionGranted = recordPermissionResult == PackageManager.PERMISSION_GRANTED;
-                if (!recordPermissionGranted) {
-                    size++;
-                }
                 //相机权限
-                int cameraPermissionResult = grantResults[2];
+                int cameraPermissionResult = grantResults[0];
                 boolean cameraPermissionGranted = cameraPermissionResult == PackageManager.PERMISSION_GRANTED;
                 if (!cameraPermissionGranted) {
                     size++;
@@ -141,5 +135,52 @@ public class Camera1Activity extends Activity {
                 }
             }
         }
+
+        if (requestCode == GALLERY_REQUEST_CODE) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                choosePhoto();
+            } else {
+                Toast.makeText(this, "请到设置-权限管理中开启", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == Camera1Activity.RESULT_OK) {
+            if (requestCode == GALLERY_REQUEST_CODE) {
+                // 获取图片
+                try {
+                    //该uri是上一个Activity返回的
+                    imageUri = data.getData();
+                    if (imageUri != null) {
+                        Bitmap bit = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageUri));
+                        Log.i("JCameraView", "bitmap = " + bit.getWidth());
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public void onClick() {
+        if (ContextCompat.checkSelfPermission(Camera1Activity.this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(Camera1Activity.this,
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    GALLERY_REQUEST_CODE);
+
+        } else {
+            choosePhoto();
+        }
+    }
+
+    @Override
+    public void captureSuccess(Bitmap bitmap) {
+        Log.i("JCameraView", "bitmap = " + bitmap.getWidth());
     }
 }
