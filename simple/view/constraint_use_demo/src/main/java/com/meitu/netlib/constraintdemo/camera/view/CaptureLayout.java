@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import com.meitu.netlib.constraintdemo.R;
 import com.meitu.netlib.constraintdemo.camera.listener.CaptureListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ClickListener;
-import com.meitu.netlib.constraintdemo.camera.listener.TypeListener;
 
 
 /**
@@ -23,21 +22,14 @@ import com.meitu.netlib.constraintdemo.camera.listener.TypeListener;
 public class CaptureLayout extends FrameLayout {
 
     private CaptureListener captureLisenter;    //拍照按钮监听
-    private TypeListener typeLisenter;          //拍照或录制后接结果按钮监听
     private ClickListener leftClickListener;    //左边按钮监听
     private ClickListener rightClickListener;   //右边按钮监听
-
-    public void setTypeLisenter(TypeListener typeLisenter) {
-        this.typeLisenter = typeLisenter;
-    }
 
     public void setCaptureLisenter(CaptureListener captureLisenter) {
         this.captureLisenter = captureLisenter;
     }
 
     private CaptureButton btn_capture;      //拍照按钮
-    private TypeButton btn_confirm;         //确认按钮
-    private TypeButton btn_cancel;          //取消按钮
     private ImageView btn_return;           //返回按钮
     private ImageView iv_custom_left;            //左边自定义按钮
     private ImageView iv_custom_right;            //右边自定义按钮
@@ -86,8 +78,6 @@ public class CaptureLayout extends FrameLayout {
     public void initEvent() {
         //默认Typebutton为隐藏
         iv_custom_right.setVisibility(GONE);
-        btn_cancel.setVisibility(GONE);
-        btn_confirm.setVisibility(GONE);
     }
 
 
@@ -104,36 +94,6 @@ public class CaptureLayout extends FrameLayout {
             public void takePictures() {
                 if (captureLisenter != null) {
                     captureLisenter.takePictures();
-                }
-            }
-        });
-
-        //取消按钮
-        btn_cancel = new TypeButton(getContext(), TypeButton.TYPE_CANCEL, button_size);
-        final LayoutParams btn_cancel_param = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
-        btn_cancel_param.gravity = Gravity.CENTER_VERTICAL;
-        btn_cancel_param.setMargins((layout_width / 4) - button_size / 2, 0, 0, 0);
-        btn_cancel.setLayoutParams(btn_cancel_param);
-        btn_cancel.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (typeLisenter != null) {
-                    typeLisenter.cancel();
-                }
-            }
-        });
-
-        //确认按钮
-        btn_confirm = new TypeButton(getContext(), TypeButton.TYPE_CONFIRM, button_size);
-        LayoutParams btn_confirm_param = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
-        btn_confirm_param.gravity = Gravity.CENTER_VERTICAL | Gravity.RIGHT;
-        btn_confirm_param.setMargins(0, 0, (layout_width / 4) - button_size / 2, 0);
-        btn_confirm.setLayoutParams(btn_confirm_param);
-        btn_confirm.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (typeLisenter != null) {
-                    typeLisenter.confirm();
                 }
             }
         });
@@ -185,8 +145,6 @@ public class CaptureLayout extends FrameLayout {
         });
 
         this.addView(btn_capture);
-        this.addView(btn_cancel);
-        this.addView(btn_confirm);
         this.addView(btn_return);
         this.addView(iv_custom_left);
         this.addView(iv_custom_right);
@@ -198,8 +156,6 @@ public class CaptureLayout extends FrameLayout {
      **************************************************/
     public void resetCaptureLayout() {
         btn_capture.resetState();
-        btn_cancel.setVisibility(GONE);
-        btn_confirm.setVisibility(GONE);
         btn_capture.setVisibility(VISIBLE);
         if (this.iconLeft != 0)
             iv_custom_left.setVisibility(VISIBLE);

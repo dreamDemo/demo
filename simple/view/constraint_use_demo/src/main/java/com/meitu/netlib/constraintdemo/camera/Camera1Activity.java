@@ -155,7 +155,8 @@ public class Camera1Activity extends Activity implements ClickListener, JCameraL
                     imageUri = data.getData();
                     if (imageUri != null) {
                         Bitmap bit = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageUri));
-                        Log.i("JCameraView", "bitmap = " + bit.getWidth());
+                        Log.i("syxCameraView", "from gallery bitmap = " + bit.getWidth());
+                        finish();
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -181,6 +182,7 @@ public class Camera1Activity extends Activity implements ClickListener, JCameraL
 
     @Override
     public void captureSuccess(Bitmap bitmap) {
-        Log.i("JCameraView", "bitmap = " + bitmap.getWidth());
+        Log.e("syxCameraView", "from camera bitmap = " + bitmap.getWidth());
+        finish();
     }
 }

@@ -23,7 +23,6 @@ import com.meitu.netlib.constraintdemo.camera.listener.CaptureListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ClickListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ErrorListener;
 import com.meitu.netlib.constraintdemo.camera.listener.JCameraListener;
-import com.meitu.netlib.constraintdemo.camera.listener.TypeListener;
 import com.meitu.netlib.constraintdemo.camera.state.CameraMachine;
 import com.meitu.netlib.constraintdemo.camera.util.ScreenUtils;
 
@@ -153,18 +152,6 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
                 mCaptureArea.setVisibility(GONE);
                 mGallery.setVisibility(GONE);
                 machine.capture();
-            }
-        });
-        //确认 取消
-        mCaptureLayout.setTypeLisenter(new TypeListener() {
-            @Override
-            public void cancel() {
-                machine.cancle(mVideoView.getHolder(), screenProp);
-            }
-
-            @Override
-            public void confirm() {
-                machine.confirm();
             }
         });
         mClose.setOnClickListener(new OnClickListener() {
