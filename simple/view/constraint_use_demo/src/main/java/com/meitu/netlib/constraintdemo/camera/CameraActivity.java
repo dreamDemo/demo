@@ -28,18 +28,16 @@ import com.meitu.netlib.constraintdemo.camera.view.CameraView;
  * Created by sunyuxin on 2018/5/2.
  */
 
-public class CameraActivity extends Activity implements ClickListener, JCameraListener{
-    private Uri imageUri;
+public class CameraActivity extends Activity implements ClickListener, JCameraListener {
+    private final static int GET_PERMISSION_REQUEST = 100; //权限申请自定义码
+    private final static int GALLERY_REQUEST_CODE = 101;
+    private CameraView mCameraView;
+    private boolean granted = false;
 
     public static void launch(Context context) {
         Intent intent = new Intent(context, CameraActivity.class);
         context.startActivity(intent);
     }
-
-    private final static int GET_PERMISSION_REQUEST = 100; //权限申请自定义码
-    private final static int GALLERY_REQUEST_CODE = 101;
-    private CameraView mCameraView;
-    private boolean granted = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -149,10 +147,8 @@ public class CameraActivity extends Activity implements ClickListener, JCameraLi
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == CameraActivity.RESULT_OK) {
             if (requestCode == GALLERY_REQUEST_CODE) {
-                // 获取图片
                 try {
-                    //该uri是上一个Activity返回的
-                    imageUri = data.getData();
+                    Uri imageUri = data.getData();
                     if (imageUri != null) {
                         Bitmap bit = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageUri));
                         Log.i("syxCameraView", "from gallery bitmap = " + bit.getWidth());
