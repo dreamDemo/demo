@@ -150,6 +150,8 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
             public void takePictures() {
                 mSwitchCamera.setVisibility(GONE);
                 mFlashLamp.setVisibility(INVISIBLE);
+                mCaptureArea.setVisibility(GONE);
+                mGallery.setVisibility(GONE);
                 machine.capture();
             }
         });
@@ -325,6 +327,8 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
         }
         mSwitchCamera.setVisibility(GONE);
         mFlashLamp.setVisibility(VISIBLE);
+        mCaptureArea.setVisibility(VISIBLE);
+        mGallery.setVisibility(VISIBLE);
         mCaptureLayout.resetCaptureLayout();
     }
 
