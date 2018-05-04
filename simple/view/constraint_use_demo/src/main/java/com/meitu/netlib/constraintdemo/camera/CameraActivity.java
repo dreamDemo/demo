@@ -28,11 +28,11 @@ import com.meitu.netlib.constraintdemo.camera.view.CameraView;
  * Created by sunyuxin on 2018/5/2.
  */
 
-public class Camera1Activity extends Activity implements ClickListener, JCameraListener{
+public class CameraActivity extends Activity implements ClickListener, JCameraListener{
     private Uri imageUri;
 
     public static void launch(Context context) {
-        Intent intent = new Intent(context, Camera1Activity.class);
+        Intent intent = new Intent(context, CameraActivity.class);
         context.startActivity(intent);
     }
 
@@ -86,7 +86,7 @@ public class Camera1Activity extends Activity implements ClickListener, JCameraL
                 granted = true;
             } else {
                 //不具有获取权限，需要进行权限申请
-                ActivityCompat.requestPermissions(Camera1Activity.this, new String[]{
+                ActivityCompat.requestPermissions(CameraActivity.this, new String[]{
                         Manifest.permission.CAMERA}, GET_PERMISSION_REQUEST);
                 granted = false;
             }
@@ -147,7 +147,7 @@ public class Camera1Activity extends Activity implements ClickListener, JCameraL
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == Camera1Activity.RESULT_OK) {
+        if (resultCode == CameraActivity.RESULT_OK) {
             if (requestCode == GALLERY_REQUEST_CODE) {
                 // 获取图片
                 try {
@@ -168,10 +168,10 @@ public class Camera1Activity extends Activity implements ClickListener, JCameraL
 
     @Override
     public void onClick() {
-        if (ContextCompat.checkSelfPermission(Camera1Activity.this,
+        if (ContextCompat.checkSelfPermission(CameraActivity.this,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(Camera1Activity.this,
+            ActivityCompat.requestPermissions(CameraActivity.this,
                     new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
                     GALLERY_REQUEST_CODE);
 

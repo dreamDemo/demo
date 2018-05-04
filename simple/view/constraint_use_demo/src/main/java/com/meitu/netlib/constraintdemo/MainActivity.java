@@ -9,9 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.meitu.netlib.constraintdemo.camera.Camera1Activity;
+import com.meitu.netlib.constraintdemo.camera.CameraActivity;
 import com.meitu.netlib.constraintdemo.expand.ExpandRecyclerActivity;
 
 import java.util.ArrayList;
@@ -81,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                                 ExpandRecyclerActivity.launchActivity(v.getContext());
                                 break;
                             case 1 :
-                                Camera1Activity.launch(v.getContext());
+                                CameraActivity.launch(v.getContext());
                                 break;
                         }
                     }

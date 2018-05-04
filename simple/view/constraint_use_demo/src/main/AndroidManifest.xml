@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".expand.ExpandRecyclerActivity" />
-        <activity android:name=".camera.Camera1Activity"
+        <activity android:name=".camera.CameraActivity"
             android:screenOrientation="portrait"/>
     </application>
 
