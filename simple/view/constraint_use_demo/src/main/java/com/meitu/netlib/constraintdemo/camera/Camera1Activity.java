@@ -134,7 +134,7 @@ public class Camera1Activity extends Activity {
                 }
                 if (size == 0) {
                     granted = true;
-                    mCameraView.onResume();
+                    mCameraView.grantedPermisssion();
                 } else {
                     Toast.makeText(this, "请到设置-权限管理中开启", Toast.LENGTH_SHORT).show();
                     finish();

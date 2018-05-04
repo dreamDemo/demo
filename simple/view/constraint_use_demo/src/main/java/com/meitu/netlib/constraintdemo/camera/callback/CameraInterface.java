@@ -344,9 +344,6 @@ public class CameraInterface implements Camera.PreviewCallback {
             return;
         }
         this.mHolder = holder;
-        if (mCamera == null) {
-            openCamera(SELECTED_CAMERA);
-        }
         if (mCamera != null) {
             try {
                 mParams = mCamera.getParameters();

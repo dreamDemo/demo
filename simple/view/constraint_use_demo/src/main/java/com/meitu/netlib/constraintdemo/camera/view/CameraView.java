@@ -218,6 +218,11 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
         machine.start(mVideoView.getHolder(), screenProp);
     }
 
+    public void grantedPermisssion() {
+        onResume();
+        CameraInterface.getInstance().doOpenCamera(CameraView.this);
+    }
+
     //生命周期onPause
     public void onPause() {
         resetState(TYPE_PICTURE);
