@@ -43,7 +43,7 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
     private volatile static CameraManager mCameraInterface;
     private SensorAccelerometerManager sensorControler;
     private int handlerTime = 0;
-    private boolean focusing;
+    private boolean focusing = false;
 
     public static void destroyCameraInterface() {
         if (mCameraInterface != null) {

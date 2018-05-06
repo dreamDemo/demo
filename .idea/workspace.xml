@@ -12,13 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="661e85fe-5107-4f29-9872-77a65f7ccd2b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/SDUtil.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java" />
     </list>
     <ignored path="demo.iws" />
@@ -118,11 +117,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CameraActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CameraActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="149" column="62" lean-forward="false" selection-start-line="149" selection-start-column="62" selection-end-line="149" selection-end-column="62" />
+            <state relative-caret-position="197">
+              <caret line="149" column="51" lean-forward="false" selection-start-line="149" selection-start-column="51" selection-end-line="149" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5789#5790#0" expanded="true" />
@@ -147,8 +146,30 @@
       <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="111" column="25" lean-forward="false" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+            <state relative-caret-position="176">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CameraView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="357" column="27" lean-forward="false" selection-start-line="357" selection-start-column="27" selection-end-line="357" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CameraManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9440">
+              <caret line="605" column="48" lean-forward="false" selection-start-line="605" selection-start-column="48" selection-end-line="605" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,7 +181,7 @@
         <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/provider/MediaStore.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="503" column="52" lean-forward="false" selection-start-line="503" selection-start-column="29" selection-end-line="503" selection-end-column="52" />
+              <caret line="1026" column="36" lean-forward="false" selection-start-line="1026" selection-start-column="36" selection-end-line="1026" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -183,7 +204,7 @@
         <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/ContentResolver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-3382">
-              <caret line="935" column="39" lean-forward="true" selection-start-line="935" selection-start-column="39" selection-end-line="935" selection-end-column="39" />
+              <caret line="935" column="39" lean-forward="false" selection-start-line="935" selection-start-column="39" selection-end-line="935" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -209,26 +230,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WallpaperCropActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/com/android/wallpapercropper/WallpaperCropActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="309" column="59" lean-forward="false" selection-start-line="309" selection-start-column="59" selection-end-line="309" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Activity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/app/Activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="4971" column="22" lean-forward="false" selection-start-line="4971" selection-start-column="22" selection-end-line="4971" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -240,7 +241,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Sensormanager</find>
       <find>mSensorManager</find>
       <find>sm</find>
       <find>captureBitmap</find>
@@ -269,6 +269,7 @@
       <find>content</find>
       <find>SCHEME_CONTENT</find>
       <find>CONTENT_AUTHORITY_SLASH</find>
+      <find>focusing</find>
       <find>GALLERY_REQUEST_CODE</find>
     </findStrings>
   </component>
@@ -12459,13 +12460,13 @@
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/callback/CameraViewListener.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/listener/CameraViewListener.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/AngleUtil.java" />
-        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/SensorManager.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/SensorAccelerometerManager.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/SDUtil.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java" />
-        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java" />
+        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java" />
+        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java" />
       </list>
     </option>
   </component>
@@ -13849,7 +13850,7 @@
     <property name="android.project.structure.last.selected" value="upload_demo" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="device.picker.selection" value="13c965ed" />
-    <property name="SearchEverywhereHistoryKey" value="Android&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/AndroidManifest.xml&#10;Cam&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java&#10;Ca&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java&#10;Cameraac&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/res/layout/camera_activity.xml&#10;Sensormana&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/SensorManager.java&#10;Came&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java&#10;Sensorma&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/SensorManager.java&#10;CameraV&#9;PSI&#9;JAVA://com.meitu.netlib.constraintdemo.camera.view.CameraView&#10;DatagramSocket&#9;PSI&#9;JAVA://java.net.DatagramSocket&#10;CameraAc&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;Camera&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java&#10;CameraA&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;App&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MyApplication.java&#10;CameraVi&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java&#10;gradle&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/gradle/wrapper/gradle-wrapper.properties&#10;build.gr&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/build.gradle&#10;gradle.&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/gradle.properties&#10;A&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;.gitigno&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/.gitignore&#10;Acti&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;CameraOpenOverCallback&#9;PSI&#9;JAVA://com.meitu.netlib.constraintdemo.camera.callback.CameraInterface.CameraOpenOverCallback&#10;Main&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java&#10;ic_camera_enhance_black_24dp.png&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/res/drawable-hdpi/ic_camera_enhance_black_24dp.png&#10;mani&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/AndroidManifest.xml&#10;Simpl&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/expand/adapter/SimpleAdapter.java&#10;MainActivity&#9;PSI&#9;JAVA://com.meitu.netlib.constraintdemo.MainActivity" />
+    <property name="SearchEverywhereHistoryKey" value="Camera&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java&#10;CameraV&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java&#10;Android&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/AndroidManifest.xml&#10;Cam&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java&#10;Ca&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java&#10;Cameraac&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/res/layout/camera_activity.xml&#10;Sensormana&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/SensorManager.java&#10;Came&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java&#10;Sensorma&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/SensorManager.java&#10;DatagramSocket&#9;PSI&#9;JAVA://java.net.DatagramSocket&#10;CameraAc&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;CameraA&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;App&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MyApplication.java&#10;CameraVi&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java&#10;gradle&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/gradle/wrapper/gradle-wrapper.properties&#10;build.gr&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/build.gradle&#10;gradle.&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/gradle.properties&#10;A&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;.gitigno&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/.gitignore&#10;Acti&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/Camera1Activity.java&#10;CameraOpenOverCallback&#9;PSI&#9;JAVA://com.meitu.netlib.constraintdemo.camera.callback.CameraInterface.CameraOpenOverCallback&#10;Main&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java&#10;ic_camera_enhance_black_24dp.png&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/res/drawable-hdpi/ic_camera_enhance_black_24dp.png&#10;mani&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/AndroidManifest.xml&#10;Simpl&#9;FILE&#9;file:///Users/sunyuxin/AndroidStudioProjects/demo/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/expand/adapter/SimpleAdapter.java&#10;MainActivity&#9;PSI&#9;JAVA://com.meitu.netlib.constraintdemo.MainActivity" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.3.0" />
     <property name="DEBUGGABLE_DEVICE" value="samsung-sm_c9000-13c965ed" />
     <property name="DEBUGGABLE_PROCESS" value="com.meitu.netlib.constraintdemo" />
@@ -13965,7 +13966,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640197" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525602350067" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -14013,7 +14014,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640197" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525602350067" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -14239,7 +14240,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640201" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525602350134" />
       </method>
     </configuration>
     <configuration default="false" name="constraint_use_demo" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -14288,7 +14289,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525602350134" />
       </method>
     </configuration>
     <configuration default="false" name="imageloader" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -14337,7 +14338,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525602350134" />
       </method>
     </configuration>
     <configuration default="false" name="interviewfortest" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -14386,7 +14387,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525602350134" />
       </method>
     </configuration>
     <configuration default="false" name="okhttp_use_demo" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -14435,7 +14436,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525602350134" />
       </method>
     </configuration>
     <configuration default="false" name="retrofit_use_demo" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -14484,7 +14485,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525602350134" />
       </method>
     </configuration>
     <configuration default="false" name="volley_use_demo" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -14533,7 +14534,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525602350134" />
       </method>
     </configuration>
     <list size="7">
@@ -14596,12 +14597,12 @@
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39920557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39920557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39821252" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39821252" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.326713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -14611,7 +14612,7 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15690169" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30089375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23109691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -14674,7 +14675,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java</url>
-          <line>35</line>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
@@ -14685,7 +14686,7 @@
           <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="51" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
@@ -14911,16 +14912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="332" column="6" lean-forward="false" selection-start-line="332" selection-start-column="6" selection-end-line="332" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/state/PreviewState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -14932,13 +14923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="91" column="3" lean-forward="false" selection-start-line="91" selection-start-column="3" selection-end-line="91" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="538" column="10" lean-forward="false" selection-start-line="538" selection-start-column="10" selection-end-line="538" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -15001,14 +14985,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/SDUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/SDUtil.java" />
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -15047,7 +15024,7 @@
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/ContentResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3382">
-          <caret line="935" column="39" lean-forward="true" selection-start-line="935" selection-start-column="39" selection-end-line="935" selection-end-column="39" />
+          <caret line="935" column="39" lean-forward="false" selection-start-line="935" selection-start-column="39" selection-end-line="935" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -15055,31 +15032,49 @@
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/provider/MediaStore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="503" column="52" lean-forward="false" selection-start-line="503" selection-start-column="29" selection-end-line="503" selection-end-column="52" />
+          <caret line="1026" column="36" lean-forward="false" selection-start-line="1026" selection-start-column="36" selection-end-line="1026" selection-end-column="36" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="111" column="25" lean-forward="false" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="149" column="62" lean-forward="false" selection-start-line="149" selection-start-column="62" selection-end-line="149" selection-end-column="62" />
+        <state relative-caret-position="197">
+          <caret line="149" column="51" lean-forward="false" selection-start-line="149" selection-start-column="51" selection-end-line="149" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5789#5790#0" expanded="true" />
             <element signature="e#5818#5819#0" expanded="true" />
             <element signature="e#5881#5882#0" expanded="true" />
             <element signature="e#5934#5935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/CameraView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="357" column="27" lean-forward="false" selection-start-line="357" selection-start-column="27" selection-end-line="357" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/CameraManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9440">
+          <caret line="605" column="48" lean-forward="false" selection-start-line="605" selection-start-column="48" selection-end-line="605" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
