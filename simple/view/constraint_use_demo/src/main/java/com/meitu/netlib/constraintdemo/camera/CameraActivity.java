@@ -147,7 +147,7 @@ public class CameraActivity extends Activity implements ClickListener, JCameraLi
                 Uri imageUri = data.getData();
 
                 if (imageUri != null) {
-                    finishOk(imageUri.getPath());
+                    finishOk(FileUtil.getFilePathFromContentUri(Uri.parse("content://media" + imageUri.getPath()), getContentResolver()));
                 }
 
             }

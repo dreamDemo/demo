@@ -6,19 +6,20 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="hahah" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="hahaha" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="661e85fe-5107-4f29-9872-77a65f7ccd2b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/SDUtil.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java" afterPath="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java" />
     </list>
     <ignored path="demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,14 +121,14 @@
       <file leaf-file-name="CameraActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="162" column="13" lean-forward="true" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
+            <state relative-caret-position="236">
+              <caret line="149" column="62" lean-forward="false" selection-start-line="149" selection-start-column="62" selection-end-line="149" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5700#5701#0" expanded="true" />
-                <element signature="e#5729#5730#0" expanded="true" />
-                <element signature="e#5792#5793#0" expanded="true" />
-                <element signature="e#5845#5846#0" expanded="true" />
+                <element signature="e#5789#5790#0" expanded="true" />
+                <element signature="e#5818#5819#0" expanded="true" />
+                <element signature="e#5881#5882#0" expanded="true" />
+                <element signature="e#5934#5935#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,28 +137,73 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+            <state relative-caret-position="299">
+              <caret line="94" column="13" lean-forward="false" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChooseAccountActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/accounts/ChooseAccountActivity.java">
+      <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="29" />
+            <state relative-caret-position="185">
+              <caret line="111" column="25" lean-forward="false" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MediaStore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/provider/MediaStore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="503" column="52" lean-forward="false" selection-start-line="503" selection-start-column="29" selection-end-line="503" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PreferenceActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/preference/PreferenceActivity.java">
+      <file leaf-file-name="BitmapFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/graphics/BitmapFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="662" column="20" lean-forward="false" selection-start-line="662" selection-start-column="20" selection-end-line="662" selection-end-column="20" />
+            <state relative-caret-position="193">
+              <caret line="426" column="25" lean-forward="false" selection-start-line="426" selection-start-column="25" selection-end-line="426" selection-end-column="25" />
+              <folding>
+                <element signature="e#19625#19626#0" expanded="true" />
+                <element signature="e#19674#19675#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContentResolver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/ContentResolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3382">
+              <caret line="935" column="39" lean-forward="true" selection-start-line="935" selection-start-column="39" selection-end-line="935" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IContentProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/IContentProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContentUris.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/ContentUris.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="83" column="23" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -173,56 +219,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChooseAccountTypeActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/accounts/ChooseAccountTypeActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="89" column="12" lean-forward="false" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/com/android/documentsui/BaseActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="760" column="43" lean-forward="false" selection-start-line="760" selection-start-column="43" selection-end-line="760" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Activity.java" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/app/Activity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
               <caret line="4971" column="22" lean-forward="false" selection-start-line="4971" selection-start-column="22" selection-end-line="4971" selection-end-column="22" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContentResolver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/ContentResolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="684" column="39" lean-forward="false" selection-start-line="684" selection-start-column="39" selection-end-line="684" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1539#1540#0" expanded="true" />
-                <element signature="e#1595#1596#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -238,15 +240,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>callback</find>
-      <find>isFocusing</find>
-      <find>sensorControler</find>
-      <find>destroyCameraInterface</find>
-      <find>handleFocus</find>
-      <find>focusing</find>
-      <find>canFocusIn</find>
-      <find>.layout.</find>
-      <find>Manager</find>
       <find>Sensormanager</find>
       <find>mSensorManager</find>
       <find>sm</find>
@@ -267,6 +260,15 @@
       <find>getExternalStorageDirectory</find>
       <find>FOLDER</find>
       <find>getCameraImageFolder</find>
+      <find>P</find>
+      <find>PIC</find>
+      <find>PICTU</find>
+      <find>PICTUR</find>
+      <find>PICTURES</find>
+      <find>content://media</find>
+      <find>content</find>
+      <find>SCHEME_CONTENT</find>
+      <find>CONTENT_AUTHORITY_SLASH</find>
       <find>GALLERY_REQUEST_CODE</find>
     </findStrings>
   </component>
@@ -12461,8 +12463,8 @@
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/SensorManager.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/manager/SensorAccelerometerManager.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/SDUtil.java" />
-        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java" />
+        <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java" />
         <option value="$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java" />
       </list>
     </option>
@@ -12884,6 +12886,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="provider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Android API 25 Platform &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="preference" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -12911,6 +12939,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hardware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Android API 25 Platform &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -13911,7 +13965,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525598733100" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640197" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -13959,7 +14013,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525598733100" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640197" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -13991,27 +14045,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -14206,7 +14239,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525598733103" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640201" />
       </method>
     </configuration>
     <configuration default="false" name="constraint_use_demo" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -14255,7 +14288,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525598733103" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
       </method>
     </configuration>
     <configuration default="false" name="imageloader" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -14304,7 +14337,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525598733103" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
       </method>
     </configuration>
     <configuration default="false" name="interviewfortest" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -14353,7 +14386,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525598733103" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
       </method>
     </configuration>
     <configuration default="false" name="okhttp_use_demo" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -14402,7 +14435,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525598733103" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
       </method>
     </configuration>
     <configuration default="false" name="retrofit_use_demo" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -14451,7 +14484,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525598733103" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
       </method>
     </configuration>
     <configuration default="false" name="volley_use_demo" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -14500,7 +14533,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525598733103" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525601640202" />
       </method>
     </configuration>
     <list size="7">
@@ -14558,6 +14591,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-213" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -14577,7 +14611,7 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38033763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15690169" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23109691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -14640,57 +14674,31 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java</url>
-          <line>26</line>
+          <line>35</line>
           <properties />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/ContentResolver.java</url>
+          <line>1275</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="50" />
+      <option name="time" value="51" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
-        <watch expression="Build.VERSION.SDK_INT &lt; Build.VERSION_CODES.M)" language="JAVA" />
-        <watch expression="Build.VERSION.SDK_INT &lt; Build.VERSION_CODES.M" language="JAVA" />
-        <watch expression="isFocusing" language="JAVA" />
+        <watch expression="createdRow" language="JAVA" />
+        <watch expression="provider" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/java/net/BindException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/java/net/DatagramSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="64" column="17" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/java/net/ContentHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/java/net/ContentHandlerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/java/net/CacheResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14705,7 +14713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14724,7 +14731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14733,7 +14739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="639" column="16" lean-forward="false" selection-start-line="639" selection-start-column="16" selection-end-line="639" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14771,10 +14776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2816">
           <caret line="204" column="24" lean-forward="false" selection-start-line="204" selection-start-column="24" selection-end-line="204" selection-end-column="24" />
-          <folding>
-            <element signature="e#7705#9644#0" expanded="false" />
-            <element signature="e#9643#9644#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -14786,19 +14787,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/TypeButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/TypeButton.java" />
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/view/FoucsView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14818,27 +14811,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/AudioUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/DeviceUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/AudioUtil.java" />
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/DeviceUtil.java" />
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/CheckPermission.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14866,14 +14844,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/listener/ResultListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/listener/ResultListener.java" />
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/listener/JCameraListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -14907,7 +14878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14915,7 +14885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14935,21 +14904,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/SDUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/state/BorrowPictureState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="60" column="15" lean-forward="false" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -14967,7 +14925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -14975,9 +14932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="91" column="3" lean-forward="false" selection-start-line="91" selection-start-column="3" selection-end-line="91" selection-end-column="3" />
-          <folding>
-            <element signature="e#2101#2102#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -14985,11 +14939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="538" column="10" lean-forward="false" selection-start-line="538" selection-start-column="10" selection-end-line="538" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3516#3864#0" expanded="true" />
-            <element signature="e#3863#3864#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -15000,26 +14949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#1595#1596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/ContentResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="684" column="39" lean-forward="false" selection-start-line="684" selection-start-column="39" selection-end-line="684" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -15072,24 +15001,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/SDUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+        <state relative-caret-position="299">
+          <caret line="94" column="13" lean-forward="false" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/ContentUris.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="83" column="23" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/IContentProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/graphics/BitmapFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="426" column="25" lean-forward="false" selection-start-line="426" selection-start-column="25" selection-end-line="426" selection-end-column="25" />
+          <folding>
+            <element signature="e#19625#19626#0" expanded="true" />
+            <element signature="e#19674#19675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/ContentResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3382">
+          <caret line="935" column="39" lean-forward="true" selection-start-line="935" selection-start-column="39" selection-end-line="935" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/provider/MediaStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="503" column="52" lean-forward="false" selection-start-line="503" selection-start-column="29" selection-end-line="503" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="111" column="25" lean-forward="false" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/view/constraint_use_demo/src/main/java/com/meitu/netlib/constraintdemo/camera/CameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="162" column="13" lean-forward="true" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
+        <state relative-caret-position="236">
+          <caret line="149" column="62" lean-forward="false" selection-start-line="149" selection-start-column="62" selection-end-line="149" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5700#5701#0" expanded="true" />
-            <element signature="e#5729#5730#0" expanded="true" />
-            <element signature="e#5792#5793#0" expanded="true" />
-            <element signature="e#5845#5846#0" expanded="true" />
+            <element signature="e#5789#5790#0" expanded="true" />
+            <element signature="e#5818#5819#0" expanded="true" />
+            <element signature="e#5881#5882#0" expanded="true" />
+            <element signature="e#5934#5935#0" expanded="true" />
           </folding>
         </state>
       </provider>
