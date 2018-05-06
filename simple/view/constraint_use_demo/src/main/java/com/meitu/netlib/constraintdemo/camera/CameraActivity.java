@@ -3,11 +3,9 @@ package com.meitu.netlib.constraintdemo.camera;
 import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -15,13 +13,13 @@ import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import com.meitu.netlib.constraintdemo.R;
 import com.meitu.netlib.constraintdemo.camera.listener.ClickListener;
 import com.meitu.netlib.constraintdemo.camera.listener.JCameraListener;
+import com.meitu.netlib.constraintdemo.camera.util.FileUtil;
 import com.meitu.netlib.constraintdemo.camera.view.CameraView;
 
 /**
@@ -30,13 +28,13 @@ import com.meitu.netlib.constraintdemo.camera.view.CameraView;
 
 public class CameraActivity extends Activity implements ClickListener, JCameraListener {
     private final static int GET_PERMISSION_REQUEST = 100; //权限申请自定义码
-    private final static int GALLERY_REQUEST_CODE = 101;
+    private final static int GALLERY_REQUEST_CODE = 100; //权限申请自定义码
     private CameraView mCameraView;
     private boolean granted = false;
 
-    public static void launch(Context context) {
+    public static void launchForResult(Activity context, int requestCode) {
         Intent intent = new Intent(context, CameraActivity.class);
-        context.startActivity(intent);
+        context.startActivityForResult(intent , requestCode);
     }
 
     @Override
@@ -79,13 +77,14 @@ public class CameraActivity extends Activity implements ClickListener, JCameraLi
      */
     private void getPermissions() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED
+                    && ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                 //具有权限
                 granted = true;
             } else {
                 //不具有获取权限，需要进行权限申请
                 ActivityCompat.requestPermissions(CameraActivity.this, new String[]{
-                        Manifest.permission.CAMERA}, GET_PERMISSION_REQUEST);
+                        Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, GET_PERMISSION_REQUEST);
                 granted = false;
             }
         }
@@ -124,6 +123,12 @@ public class CameraActivity extends Activity implements ClickListener, JCameraLi
                 if (!cameraPermissionGranted) {
                     size++;
                 }
+                //sd 卡权限
+                int sdPermissionResult = grantResults[1];
+                boolean sdPermissionGranted = sdPermissionResult == PackageManager.PERMISSION_GRANTED;
+                if (!sdPermissionGranted) {
+                    size++;
+                }
                 if (size == 0) {
                     granted = true;
                     mCameraView.grantedPermisssion();
@@ -133,30 +138,18 @@ public class CameraActivity extends Activity implements ClickListener, JCameraLi
                 }
             }
         }
-
-        if (requestCode == GALLERY_REQUEST_CODE) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                choosePhoto();
-            } else {
-                Toast.makeText(this, "请到设置-权限管理中开启", Toast.LENGTH_SHORT).show();
-            }
-        }
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == CameraActivity.RESULT_OK) {
             if (requestCode == GALLERY_REQUEST_CODE) {
-                try {
-                    Uri imageUri = data.getData();
-                    if (imageUri != null) {
-                        Bitmap bit = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageUri));
-                        Log.i("syxCameraView", "from gallery bitmap = " + bit.getWidth());
-                        finish();
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
+                Uri imageUri = data.getData();
+
+                if (imageUri != null) {
+                    finishOk(imageUri.getPath());
                 }
+
             }
         }
         super.onActivityResult(requestCode, resultCode, data);
@@ -164,21 +157,23 @@ public class CameraActivity extends Activity implements ClickListener, JCameraLi
 
     @Override
     public void onClick() {
-        if (ContextCompat.checkSelfPermission(CameraActivity.this,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(CameraActivity.this,
-                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                    GALLERY_REQUEST_CODE);
-
-        } else {
-            choosePhoto();
-        }
+        choosePhoto();
     }
 
     @Override
     public void captureSuccess(Bitmap bitmap) {
-        Log.e("syxCameraView", "from camera bitmap = " + bitmap.getWidth());
-        finish();
+        finishOk(FileUtil.saveBitmap(bitmap));
+    }
+
+    private void finishOk(String imagePath) {
+
+        try {
+            Intent intent = getIntent();
+            intent.putExtra("img_url", imagePath);
+            setResult(RESULT_OK, intent);
+            finish();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

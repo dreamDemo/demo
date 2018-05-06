@@ -1,10 +1,13 @@
 package com.meitu.netlib.constraintdemo;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -80,11 +83,21 @@ public class MainActivity extends AppCompatActivity {
                                 ExpandRecyclerActivity.launchActivity(v.getContext());
                                 break;
                             case 1 :
-                                CameraActivity.launch(v.getContext());
+                                CameraActivity.launchForResult((Activity) v.getContext(), 101);
                                 break;
                         }
                     }
                 });
+            }
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            if (requestCode == 101) {
+                Log.d("hahaha", data.getStringExtra("img_url"));
             }
         }
     }
