@@ -33,7 +33,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.graphics.Bitmap.createBitmap;
+
 
 /**
  * create by sunyuxin
@@ -471,7 +471,7 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
                     matrix.postScale(-1, 1);
                 }
 
-                bitmap = createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
+                bitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
                 if (callback != null) {
                     if (nowAngle == 90 || nowAngle == 270) {
                         callback.captureResult(bitmap, true);
