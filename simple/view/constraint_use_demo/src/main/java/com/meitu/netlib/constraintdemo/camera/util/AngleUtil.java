@@ -1,6 +1,5 @@
 package com.meitu.netlib.constraintdemo.camera.util;
 
-import android.util.Log;
 
 /**
  * create by sunyuxin

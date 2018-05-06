@@ -3,8 +3,8 @@ package com.meitu.netlib.constraintdemo.camera.state;
 import android.content.Context;
 import android.view.SurfaceHolder;
 
-import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
-import com.meitu.netlib.constraintdemo.camera.callback.CameraViewInterface;
+import com.meitu.netlib.constraintdemo.camera.manager.CameraManager;
+import com.meitu.netlib.constraintdemo.camera.listener.CameraViewListener;
 
 
 /**
@@ -15,12 +15,12 @@ public class CameraMachine implements State {
 
     private Context context;
     private State state;
-    private CameraViewInterface view;
+    private CameraViewListener view;
 
     private State previewState;       //预览状态
     private State borrowPictureState; //查看图片状态
 
-    public CameraMachine(Context context, CameraViewInterface view, CameraInterface.CameraOpenOverCallback
+    public CameraMachine(Context context, CameraViewListener view, CameraManager.CameraOpenOverCallback
             cameraOpenOverCallback) {
         this.context = context;
         previewState = new PreviewState(this);
@@ -30,7 +30,7 @@ public class CameraMachine implements State {
         this.view = view;
     }
 
-    public CameraViewInterface getView() {
+    public CameraViewListener getView() {
         return view;
     }
 
@@ -63,7 +63,7 @@ public class CameraMachine implements State {
     }
 
     @Override
-    public void foucs(float x, float y, CameraInterface.FocusCallback callback) {
+    public void foucs(float x, float y, CameraManager.FocusCallback callback) {
         state.foucs(x, y, callback);
     }
 

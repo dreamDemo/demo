@@ -1,11 +1,11 @@
-package com.meitu.netlib.constraintdemo.camera.callback;
+package com.meitu.netlib.constraintdemo.camera.listener;
 
 import android.graphics.Bitmap;
 
 /**
  * create by sunyuxin
  */
-public interface CameraViewInterface {
+public interface CameraViewListener {
     void resetState(int type);
 
     void confirmState(int type);

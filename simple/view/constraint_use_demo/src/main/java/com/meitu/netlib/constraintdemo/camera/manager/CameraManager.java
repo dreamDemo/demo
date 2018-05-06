@@ -1,4 +1,4 @@
-package com.meitu.netlib.constraintdemo.camera.callback;
+package com.meitu.netlib.constraintdemo.camera.manager;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -12,7 +12,6 @@ import android.graphics.RectF;
 import android.hardware.Camera;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
-import android.hardware.SensorManager;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
@@ -23,7 +22,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.meitu.netlib.constraintdemo.BasicConfig;
-import com.meitu.netlib.constraintdemo.camera.SensorControler;
 import com.meitu.netlib.constraintdemo.camera.listener.ErrorListener;
 import com.meitu.netlib.constraintdemo.camera.util.AngleUtil;
 import com.meitu.netlib.constraintdemo.camera.util.CameraParamUtil;
@@ -40,10 +38,10 @@ import static android.graphics.Bitmap.createBitmap;
 /**
  * create by sunyuxin
  */
-public class CameraInterface implements Camera.PreviewCallback, SensorControler.CameraFocusListener {
+public class CameraManager implements Camera.PreviewCallback, SensorAccelerometerManager.CameraFocusListener {
 
-    private volatile static CameraInterface mCameraInterface;
-    private SensorControler sensorControler;
+    private volatile static CameraManager mCameraInterface;
+    private SensorAccelerometerManager sensorControler;
     private int handlerTime = 0;
     private boolean focusing;
 
@@ -85,15 +83,12 @@ public class CameraInterface implements Camera.PreviewCallback, SensorControler.
     private int nowScaleRate = 0;
     private int recordScleRate = 0;
 
-    //视频质量
-    private SensorManager sm = null;
-
     //获取CameraInterface单例
-    public static synchronized CameraInterface getInstance() {
+    public static synchronized CameraManager getInstance() {
         if (mCameraInterface == null)
-            synchronized (CameraInterface.class) {
+            synchronized (CameraManager.class) {
                 if (mCameraInterface == null)
-                    mCameraInterface = new CameraInterface();
+                    mCameraInterface = new CameraManager();
             }
         return mCameraInterface;
     }
@@ -283,9 +278,9 @@ public class CameraInterface implements Camera.PreviewCallback, SensorControler.
         void cameraHasOpened();
     }
 
-    private CameraInterface() {
+    private CameraManager() {
         findAvailableCameras();
-        sensorControler = SensorControler.getInstance();
+        sensorControler = SensorAccelerometerManager.getInstance();
         SELECTED_CAMERA = CAMERA_POST_POSITION;
     }
 

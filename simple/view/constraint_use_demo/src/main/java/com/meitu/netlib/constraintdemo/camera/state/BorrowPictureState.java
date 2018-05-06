@@ -3,7 +3,7 @@ package com.meitu.netlib.constraintdemo.camera.state;
 import android.util.Log;
 import android.view.SurfaceHolder;
 
-import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
+import com.meitu.netlib.constraintdemo.camera.manager.CameraManager;
 import com.meitu.netlib.constraintdemo.camera.view.CameraView;
 
 
@@ -20,7 +20,7 @@ public class BorrowPictureState implements State {
 
     @Override
     public void start(SurfaceHolder holder, float screenProp) {
-        CameraInterface.getInstance().doStartPreview(holder, screenProp);
+        CameraManager.getInstance().doStartPreview(holder, screenProp);
         machine.setState(machine.getPreviewState());
     }
 
@@ -31,7 +31,7 @@ public class BorrowPictureState implements State {
 
 
     @Override
-    public void foucs(float x, float y, CameraInterface.FocusCallback callback) {
+    public void foucs(float x, float y, CameraManager.FocusCallback callback) {
     }
 
     @Override
@@ -51,7 +51,7 @@ public class BorrowPictureState implements State {
 
     @Override
     public void cancle(SurfaceHolder holder, float screenProp) {
-        CameraInterface.getInstance().doStartPreview(holder, screenProp);
+        CameraManager.getInstance().doStartPreview(holder, screenProp);
         machine.getView().resetState(CameraView.TYPE_PICTURE);
         machine.setState(machine.getPreviewState());
     }

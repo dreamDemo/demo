@@ -1,4 +1,4 @@
-package com.meitu.netlib.constraintdemo.camera;
+package com.meitu.netlib.constraintdemo.camera.manager;
 
 import android.app.Activity;
 import android.hardware.Sensor;
@@ -7,22 +7,21 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
 import com.meitu.netlib.constraintdemo.BasicConfig;
-import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
 
 import java.util.Calendar;
 
 /**
  * 加速度控制器  用来控制对焦
  */
-public class SensorControler implements SensorEventListener {
-    public static final String TAG = "SensorControler";
+public class SensorAccelerometerManager implements SensorEventListener {
+    public static final String TAG = "SensorAccelerometerManager";
     private SensorManager mSensorManager;
     private Sensor mSensor;
 
     private int mX, mY, mZ;
     private long lastStaticStamp = 0;
     Calendar mCalendar;
-    CameraInterface.SensorListener sensorInterFaceListener;
+    CameraManager.SensorListener sensorInterFaceListener;
 
     boolean isFocusing = false;
     boolean canFocusIn = false;  //内部是否能够对焦控制机制
@@ -37,18 +36,18 @@ public class SensorControler implements SensorEventListener {
 
     private CameraFocusListener mCameraFocusListener;
 
-    private static SensorControler mInstance;
+    private static SensorAccelerometerManager mInstance;
 
     private int foucsing = 1;  //1 表示没有被锁定 0表示被锁定
 
-    private SensorControler() {
+    private SensorAccelerometerManager() {
         mSensorManager = (SensorManager) BasicConfig.getContext().getSystemService(Activity.SENSOR_SERVICE);
         mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);// TYPE_GRAVITY
     }
 
-    public static SensorControler getInstance() {
+    public static SensorAccelerometerManager getInstance() {
         if (mInstance == null) {
-            mInstance = new SensorControler();
+            mInstance = new SensorAccelerometerManager();
         }
         return mInstance;
     }
@@ -61,7 +60,7 @@ public class SensorControler implements SensorEventListener {
         restParams();
         canFocus = true;
         mSensorManager.registerListener(this, mSensor,
-                SensorManager.SENSOR_DELAY_NORMAL);
+                android.hardware.SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     public void onStop() {
@@ -179,7 +178,7 @@ public class SensorControler implements SensorEventListener {
         void onFocus();
     }
 
-    public void setSensorInterFaceListener (CameraInterface.SensorListener sensorInterFaceListener) {
+    public void setSensorInterFaceListener (CameraManager.SensorListener sensorInterFaceListener) {
         this.sensorInterFaceListener = sensorInterFaceListener;
     }
 }

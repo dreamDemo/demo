@@ -2,7 +2,7 @@ package com.meitu.netlib.constraintdemo.camera.state;
 
 import android.view.SurfaceHolder;
 
-import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
+import com.meitu.netlib.constraintdemo.camera.manager.CameraManager;
 
 
 /**
@@ -14,7 +14,7 @@ public interface State {
 
     void stop();
 
-    void foucs(float x, float y, CameraInterface.FocusCallback callback);
+    void foucs(float x, float y, CameraManager.FocusCallback callback);
 
     void swtich(SurfaceHolder holder, float screenProp);
 

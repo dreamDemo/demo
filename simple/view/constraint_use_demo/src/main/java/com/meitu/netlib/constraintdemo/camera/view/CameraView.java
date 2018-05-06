@@ -17,8 +17,8 @@ import android.widget.ImageView;
 import android.widget.VideoView;
 
 import com.meitu.netlib.constraintdemo.R;
-import com.meitu.netlib.constraintdemo.camera.callback.CameraInterface;
-import com.meitu.netlib.constraintdemo.camera.callback.CameraViewInterface;
+import com.meitu.netlib.constraintdemo.camera.manager.CameraManager;
+import com.meitu.netlib.constraintdemo.camera.listener.CameraViewListener;
 import com.meitu.netlib.constraintdemo.camera.listener.CaptureListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ClickListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ErrorListener;
@@ -30,8 +30,8 @@ import com.meitu.netlib.constraintdemo.camera.util.ScreenUtils;
 /**
  * create by sunyuxin
  */
-public class CameraView extends FrameLayout implements CameraInterface.CameraOpenOverCallback, SurfaceHolder
-        .Callback, CameraViewInterface {
+public class CameraView extends FrameLayout implements CameraManager.CameraOpenOverCallback, SurfaceHolder
+        .Callback, CameraViewListener {
 
     //Camera状态机
     private CameraMachine machine;
@@ -195,27 +195,27 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
 
     @Override
     public void cameraHasOpened() {
-        CameraInterface.getInstance().doStartPreview(mVideoView.getHolder(), screenProp);
+        CameraManager.getInstance().doStartPreview(mVideoView.getHolder(), screenProp);
     }
 
     //生命周期onResume
     public void onResume() {
         resetState(TYPE_DEFAULT); //重置状态
-        CameraInterface.getInstance().registerSensorManager(mContext);
-        CameraInterface.getInstance().setSwitchView(mSwitchCamera, mFlashLamp, mGallery, mCaptureArea);
+        CameraManager.getInstance().registerSensorManager(mContext);
+        CameraManager.getInstance().setSwitchView(mSwitchCamera, mFlashLamp, mGallery, mCaptureArea);
         machine.start(mVideoView.getHolder(), screenProp);
     }
 
     public void grantedPermisssion() {
         onResume();
-        CameraInterface.getInstance().doOpenCamera(CameraView.this);
+        CameraManager.getInstance().doOpenCamera(CameraView.this);
     }
 
     //生命周期onPause
     public void onPause() {
         resetState(TYPE_PICTURE);
-        CameraInterface.getInstance().isPreview(false);
-        CameraInterface.getInstance().unregisterSensorManager(mContext);
+        CameraManager.getInstance().isPreview(false);
+        CameraManager.getInstance().unregisterSensorManager(mContext);
     }
 
     //SurfaceView生命周期
@@ -224,7 +224,7 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
         new Thread() {
             @Override
             public void run() {
-                CameraInterface.getInstance().doOpenCamera(CameraView.this);
+                CameraManager.getInstance().doOpenCamera(CameraView.this);
             }
         }.start();
     }
@@ -235,7 +235,7 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
 
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
-        CameraInterface.getInstance().doDestroyCamera();
+        CameraManager.getInstance().doDestroyCamera();
     }
 
 
@@ -269,7 +269,7 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
                     }
                     if ((int) (result - firstTouchLength) / zoomGradient != 0) {
                         firstTouch = true;
-                        machine.zoom(result - firstTouchLength, CameraInterface.TYPE_CAPTURE);
+                        machine.zoom(result - firstTouchLength, CameraManager.TYPE_CAPTURE);
                     }
                 }
                 break;
@@ -283,7 +283,7 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
     //对焦框指示器动画
     private void setFocusViewWidthAnimation(float x, float y) {
 
-        machine.foucs(x, y, new CameraInterface.FocusCallback() {
+        machine.foucs(x, y, new CameraManager.FocusCallback() {
             @Override
             public void focusSuccess() {
                 mFoucsView.setVisibility(INVISIBLE);
@@ -306,7 +306,7 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
     //启动Camera错误回调
     public void setErrorLisenter(ErrorListener errorLisenter) {
         this.errorLisenter = errorLisenter;
-        CameraInterface.getInstance().setErrorLinsenter(errorLisenter);
+        CameraManager.getInstance().setErrorLinsenter(errorLisenter);
     }
 
 
