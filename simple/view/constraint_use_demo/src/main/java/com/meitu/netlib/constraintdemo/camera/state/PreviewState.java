@@ -32,8 +32,10 @@ class PreviewState implements State {
 
     @Override
     public void foucs(float x, float y, CameraInterface.FocusCallback callback) {
-        if (machine.getView().handlerFoucs(x, y)) {
-            CameraInterface.getInstance().handleFocus(x, y, callback);
+        if (CameraInterface.getInstance().canFocus()) {
+            if (machine.getView().handlerFoucs(x, y)) {
+                CameraInterface.getInstance().handleFocus(x, y, callback);
+            }
         }
     }
 

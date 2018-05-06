@@ -109,6 +109,7 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
         //缩放梯度
         zoomGradient = (int) (layout_width / 16f);
         machine = new CameraMachine(getContext(), this, this);
+
     }
 
     private void initView() {
@@ -281,6 +282,7 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
 
     //对焦框指示器动画
     private void setFocusViewWidthAnimation(float x, float y) {
+
         machine.foucs(x, y, new CameraInterface.FocusCallback() {
             @Override
             public void focusSuccess() {
@@ -288,6 +290,7 @@ public class CameraView extends FrameLayout implements CameraInterface.CameraOpe
             }
         });
     }
+
 
     /**************************************************
      * 对外提供的API                     *
