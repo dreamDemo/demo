@@ -15,11 +15,13 @@ import android.hardware.SensorEvent;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.Gravity;
 import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.VideoView;
 
 import com.meitu.netlib.constraintdemo.BasicConfig;
 import com.meitu.netlib.constraintdemo.camera.listener.ErrorListener;
@@ -79,6 +81,7 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
     public static final int TYPE_CAPTURE = 0x091;
     private int nowScaleRate = 0;
     private int recordScleRate = 0;
+    private VideoView mVideoView;
 
     //获取CameraInterface单例
     public static synchronized CameraManager getInstance() {
@@ -90,11 +93,12 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
         return mCameraInterface;
     }
 
-    public void setSwitchView(ImageView mSwitchView, ImageView mFlashLamp, ImageView mGallery, View mCaptureArea) {
+    public void setSwitchView(ImageView mSwitchView, ImageView mFlashLamp, ImageView mGallery, View mCaptureArea, VideoView videoView) {
         this.mSwitchView = mSwitchView;
         this.mFlashLamp = mFlashLamp;
         this.mGallery = mGallery;
         this.mCaptureArea = mCaptureArea;
+        this.mVideoView = videoView;
         if (mSwitchView != null) {
             cameraAngle = CameraParamUtil.getInstance().getCameraDisplayOrientation(mSwitchView.getContext(),
                     SELECTED_CAMERA);
@@ -194,8 +198,8 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
             layoutParams.leftMargin = DimenHelper.dp2px(20);
         } else { // 横屏
             parentParams.bottomMargin = DimenHelper.dp2px(100);
-            layoutParams.height = ScreenUtils.getScreenWidth(mGallery.getContext()) - DimenHelper.dp2px(80);
-            layoutParams.width = ScreenUtils.getScreenHeight(mGallery.getContext()) - DimenHelper.dp2px(100) - DimenHelper.dp2px(120);
+            layoutParams.height = ScreenUtils.getScreenWidth() - DimenHelper.dp2px(80);
+            layoutParams.width = ScreenUtils.getScreenHeight() - DimenHelper.dp2px(100) - DimenHelper.dp2px(120);
         }
         parentView.setLayoutParams(parentParams);
         mCaptureArea.setLayoutParams(layoutParams);
@@ -264,8 +268,8 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
     @Override
     public void onFocus() {
         if (canFocus()) {
-            handleFocus(ScreenUtils.getScreenHeight(BasicConfig.getContext()) / 2.0f
-                    , ScreenUtils.getScreenHeight(BasicConfig.getContext()) / 2.0f,
+            handleFocus(ScreenUtils.getScreenHeight() / 2.0f
+                    , ScreenUtils.getScreenHeight() / 2.0f,
                     null);
         }
     }
@@ -300,8 +304,8 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
             @Override
             public void run() {
                 if (canFocus()) {
-                    handleFocus(ScreenUtils.getScreenHeight(BasicConfig.getContext()) / 2.0f
-                            , ScreenUtils.getScreenHeight(BasicConfig.getContext()) / 2.0f,
+                    handleFocus(ScreenUtils.getScreenHeight() / 2.0f
+                            , ScreenUtils.getScreenHeight() / 2.0f,
                             null);
                 }
             }
@@ -361,7 +365,7 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
         if (mCamera != null) {
             try {
                 mParams = mCamera.getParameters();
-                Camera.Size previewSize = CameraParamUtil.getInstance().getPreviewSize(mParams
+                final Camera.Size previewSize = CameraParamUtil.getInstance().getPreviewSize(mParams
                         .getSupportedPreviewSizes(), 1000, screenProp);
                 Camera.Size pictureSize = CameraParamUtil.getInstance().getPictureSize(mParams
                         .getSupportedPictureSizes(), 1200, screenProp);
@@ -369,6 +373,7 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
                 mParams.setPreviewSize(previewSize.width, previewSize.height);
 
                 mParams.setPictureSize(pictureSize.width, pictureSize.height);
+                videoViewResize(previewSize);
 
                 if (CameraParamUtil.getInstance().isSupportedFocusMode(
                         mParams.getSupportedFocusModes(),
@@ -392,6 +397,32 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
                 e.printStackTrace();
             }
         }
+    }
+
+    private void videoViewResize(Camera.Size previewSize) {
+        if (previewSize == null || mVideoView == null)
+            return;
+        int wid = Math.min(previewSize.width, previewSize.height);
+        int hei = Math.max(previewSize.width, previewSize.height);
+        int sW = ScreenUtils.getScreenWidth();
+        int sH = ScreenUtils.getScreenHeight();
+        if ((sW * 1.0f / sH) < (wid * 1.0 / hei)) {
+            wid = (int) (sH * (wid * 1.0 / hei));
+            hei = sH;
+        } else {
+            hei = (int) (sW / ( wid * 1.0 / hei));
+            wid = sW;
+        }
+        final FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) mVideoView.getLayoutParams();
+        layoutParams.width = wid;
+        layoutParams.height = hei;
+        layoutParams.gravity = Gravity.CENTER;
+        mVideoView.post(new Runnable() {
+            @Override
+            public void run() {
+                mVideoView.setLayoutParams(layoutParams);
+            }
+        });
     }
 
     /**
@@ -545,8 +576,8 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
     private static Rect calculateTapArea(float x, float y, float coefficient, Context context) {
         float focusAreaSize = 300;
         int areaSize = Float.valueOf(focusAreaSize * coefficient).intValue();
-        int centerX = (int) (x / ScreenUtils.getScreenWidth(context) * 2000 - 1000);
-        int centerY = (int) (y / ScreenUtils.getScreenHeight(context) * 2000 - 1000);
+        int centerX = (int) (x / ScreenUtils.getScreenWidth() * 2000 - 1000);
+        int centerY = (int) (y / ScreenUtils.getScreenHeight() * 2000 - 1000);
         int left = clamp(centerX - areaSize / 2, -1000, 1000);
         int top = clamp(centerY - areaSize / 2, -1000, 1000);
         RectF rectF = new RectF(left, top, left + areaSize, top + areaSize);

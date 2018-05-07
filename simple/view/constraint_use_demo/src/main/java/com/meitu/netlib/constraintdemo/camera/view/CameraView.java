@@ -24,6 +24,7 @@ import com.meitu.netlib.constraintdemo.camera.listener.ClickListener;
 import com.meitu.netlib.constraintdemo.camera.listener.ErrorListener;
 import com.meitu.netlib.constraintdemo.camera.listener.JCameraListener;
 import com.meitu.netlib.constraintdemo.camera.state.CameraMachine;
+import com.meitu.netlib.constraintdemo.camera.util.CameraParamUtil;
 import com.meitu.netlib.constraintdemo.camera.util.ScreenUtils;
 
 
@@ -105,7 +106,7 @@ public class CameraView extends FrameLayout implements CameraManager.CameraOpenO
     }
 
     private void initData() {
-        layout_width = ScreenUtils.getScreenWidth(mContext);
+        layout_width = ScreenUtils.getScreenWidth();
         //缩放梯度
         zoomGradient = (int) (layout_width / 16f);
         machine = new CameraMachine(getContext(), this, this);
@@ -202,7 +203,7 @@ public class CameraView extends FrameLayout implements CameraManager.CameraOpenO
     public void onResume() {
         resetState(TYPE_DEFAULT); //重置状态
         CameraManager.getInstance().registerSensorManager(mContext);
-        CameraManager.getInstance().setSwitchView(mSwitchCamera, mFlashLamp, mGallery, mCaptureArea);
+        CameraManager.getInstance().setSwitchView(mSwitchCamera, mFlashLamp, mGallery, mCaptureArea, mVideoView);
         machine.start(mVideoView.getHolder(), screenProp);
     }
 
