@@ -70,9 +70,6 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
     private ImageView mGallery;
     private View mCaptureArea;
 
-    private int preview_width;
-    private int preview_height;
-
     private int angle = 0;
     private int cameraAngle = 90;//摄像头角度   默认为90度
     private int rotation = 0;
@@ -371,9 +368,6 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
 
                 mParams.setPreviewSize(previewSize.width, previewSize.height);
 
-                preview_width = previewSize.width;
-                preview_height = previewSize.height;
-
                 mParams.setPictureSize(pictureSize.width, pictureSize.height);
 
                 if (CameraParamUtil.getInstance().isSupportedFocusMode(
@@ -458,7 +452,6 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
                 nowAngle = Math.abs(cameraAngle - angle);
                 break;
         }
-//
         mCamera.takePicture(null, null, new Camera.PictureCallback() {
             @Override
             public void onPictureTaken(byte[] data, Camera camera) {
@@ -573,11 +566,6 @@ public class CameraManager implements Camera.PreviewCallback, SensorAcceleromete
 
     public void setErrorLinsenter(ErrorListener errorLisenter) {
         this.errorLisenter = errorLisenter;
-    }
-
-
-    public interface StopRecordCallback {
-        void recordResult(String url, Bitmap firstFrame);
     }
 
     interface ErrorCallback {
