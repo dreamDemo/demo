@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.meitu.netlib.constraintdemo.Bessel.BesselActivity;
 import com.meitu.netlib.constraintdemo.camera.CameraActivity;
 import com.meitu.netlib.constraintdemo.expand.ExpandRecyclerActivity;
 
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private void initData() {
         mList.add("点击展开RecyclerView");
         mList.add("照相机");
+        mList.add("贝塞尔2阶");
     }
 
     public class MainAdapter extends RecyclerView.Adapter<MainAdapter.TextHolder> {
@@ -84,6 +86,9 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             case 1 :
                                 CameraActivity.launchForResult((Activity) v.getContext(), 101);
+                                break;
+                            case 2:
+                                BesselActivity.launch((Activity) v.getContext());
                                 break;
                         }
                     }

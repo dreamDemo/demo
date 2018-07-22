@@ -27,6 +27,9 @@
         <activity android:name=".expand.ExpandRecyclerActivity" />
         <activity android:name=".camera.CameraActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".Bessel.Bessel1Activity" />
+        <activity android:name=".Bessel.BesselActivity" />
+        <activity android:name=".Bessel.Bessel2Activity" />
     </application>
 
 </manifest>
